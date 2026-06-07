@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All POS & Delivery Integrations | ChowNow</title>
+  <meta name="description" content="ChowNow integrates with 20+ POS systems and delivery apps including Toast, Square, Clover, DoorDash, UberEats, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Condensed:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script><script src="https://unpkg.com/lucide@latest"></script>
+  <script>tailwind.config={theme:{extend:{colors:{'cn-black':'#161616','cn-dark':'#191919','cn-gray':'#6f6f6f','cn-light':'#E5E5E5','cn-blue':'#b6e4ef','cn-green':'#b9e3c6','cn-pink':'#ffcedb','cn-bg':'#ffffff'},fontFamily:{'ibm':['"IBM Plex Sans"','sans-serif'],'ibm-cond':['"IBM Plex Condensed"','sans-serif'],'roboto':['"Roboto"','sans-serif']},maxWidth:{'8xl':'1400px'}}}}</script>
+  <style>*{box-sizing:border-box}body{font-family:'Roboto',sans-serif;color:#161616;overflow-x:hidden}.font-ibm{font-family:'IBM Plex Sans',sans-serif}.font-ibm-cond{font-family:'IBM Plex Condensed',sans-serif}.star-sep{overflow:hidden;white-space:nowrap;line-height:1;padding:0;margin:0;text-align:center;font-family:'IBM Plex Condensed',sans-serif;letter-spacing:0;color:#161616;user-select:none}.star-sep-inner{display:inline-block;white-space:nowrap}.mega-dropdown{opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .25s ease,transform .25s ease,visibility .25s;pointer-events:none}.mega-parent:hover .mega-dropdown,.mega-parent.open .mega-dropdown{opacity:1;visibility:visible;transform:translateY(0);pointer-events:auto}.mobile-menu{transform:translateX(100%);transition:transform .4s cubic-bezier(.4,0,.2,1)}.mobile-menu.open{transform:translateX(0)}html{scroll-behavior:smooth}.section-fade{opacity:0;transform:translateY(20px);transition:opacity .7s ease-out,transform .7s ease-out}.section-fade.visible{opacity:1;transform:translateY(0)}.form-input:focus{outline:none;border-color:#161616;box-shadow:0 0 0 2px rgba(22,22,22,.1)}.pill-new{position:relative}.pill-new::after{content:'NEW';position:absolute;top:-6px;right:-48px;background:#bbefc4;color:#303030;font-size:10px;font-weight:700;letter-spacing:.08em;padding:3px 8px;border-radius:5px;line-height:1}.faq-content{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease;padding:0 24px}.faq-card.open .faq-content{max-height:500px;padding:0 24px 24px}.faq-card.open .faq-chevron{transform:rotate(180deg)}.faq-chevron{transition:transform .3s ease}.logo-card{min-width:200px;height:155px;border:1px solid #161616;border-radius:16px;display:flex;align-items:center;justify-content:center;padding:16px;flex-shrink:0;background:#fff;transition:transform .3s ease}.logo-card:hover{transform:scale(1.05)}</style>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="bg-cn-bg">
+ 
+
+ <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Roboto', sans-serif; color: #161616; overflow-x: hidden; }
+    .font-ibm { font-family: 'IBM Plex Sans', sans-serif; }
+    .font-ibm-cond { font-family: 'IBM Plex Condensed', sans-serif; }
+    .star-sep {
+      overflow: hidden; white-space: nowrap; line-height: 1; padding: 8px 0; margin: 0;
+      text-align: center; font-family: 'IBM Plex Condensed', sans-serif;
+      letter-spacing: 0; color: #161616; user-select: none; -webkit-user-select: none;
+      font-size: 18px; font-weight: 600;
+    }
+    .star-sep-inner { display: inline-block; white-space: nowrap; }
+    .mega-dropdown {
+      opacity: 0; visibility: hidden; transform: translateY(8px);
+      transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+      pointer-events: none;
+    }
+    .mega-parent:hover .mega-dropdown,
+    .mega-parent.open .mega-dropdown {
+      opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto;
+    }
+    .logo-slider-track {
+      display: flex; gap: 20px; animation: scrollLogos 30s linear infinite;
+    }
+    .logo-slider-track:hover { animation-play-state: paused; }
+    @keyframes scrollLogos { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    .logo-card {
+      min-width: 200px; height: 155px; border: 1px solid #161616; border-radius: 16px;
+      display: flex; align-items: center; justify-content: center; padding: 16px;
+      flex-shrink: 0; background: #fff;
+    }
+    .case-slider-track {
+      display: flex; gap: 24px; animation: scrollCases 60s linear infinite;
+    }
+    .case-slider-track:hover { animation-play-state: paused; }
+    @keyframes scrollCases { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    .faq-content {
+      max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s ease;
+      padding: 0 24px;
+    }
+    .faq-card.open .faq-content { max-height: 500px; padding: 0 24px 24px; }
+    .faq-card.open .faq-chevron { transform: rotate(180deg); }
+    .faq-chevron { transition: transform 0.3s ease; }
+    .mobile-menu {
+      transform: translateX(100%);
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .mobile-menu.open { transform: translateX(0); }
+    .image-card { transition: transform 0.3s ease; }
+    .image-card:hover { transform: scale(1.02); }
+    html { scroll-behavior: smooth; }
+    .pill-new { position: relative; }
+    .pill-new::after {
+      content: 'NEW'; position: absolute; top: -6px; right: -48px;
+      background: #bbefc4; color: #303030; font-size: 10px; font-weight: 700;
+      letter-spacing: 0.08em; padding: 3px 8px; border-radius: 5px; line-height: 1;
+    }
+    .section-fade {
+      opacity: 0; transform: translateY(20px);
+      transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    }
+    .section-fade.visible { opacity: 1; transform: translateY(0); }
+    .form-input:focus {
+      outline: none; border-color: #161616; box-shadow: 0 0 0 2px rgba(22,22,22,0.1);
+    }
+    .pill-link { position: relative; display: inline-block; }
+    .pill-link::after {
+      content: 'NEW'; position: absolute; top: -8px; right: -52px;
+      background: #bbefc4; color: #303030; font-size: 10px; font-weight: 700;
+      letter-spacing: 0.1em; padding: 3px 8px; border-radius: 5px; line-height: 1;
+      white-space: nowrap;
+    }
+    .nav-link {
+      position: relative;
+      transition: opacity 0.15s ease;
+    }
+    .nav-link:hover { opacity: 0.6; }
+    .drop-link {
+      transition: opacity 0.15s ease;
+    }
+    .drop-link:hover { opacity: 0.6; }
+    #site-header { transition: box-shadow 0.3s ease; }
+    
+    /* Responsive adjustments */
+    @media (max-width: 1023px) {
+      .star-sep { font-size: 14px; padding: 6px 0; }
+    }
+    @media (max-width: 767px) {
+      .star-sep { font-size: 12px; padding: 5px 0; }
+    }
+  </style>
+</head>
+<body class="bg-cn-bg">
+
+  <!-- ========== HEADER ========== -->
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-50 bg-white">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10 flex items-center justify-between h-[70px] sm:h-[80px] lg:h-[85px]">
+      <a href="index.html" class="flex-shrink-0" aria-label="ChowNow Home">
+        <svg viewBox="0 0 200 51" fill="none" class="h-[36px] sm:h-[40px] lg:h-[47px] w-auto" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="23.0854" cy="23.2582" r="18.3188" fill="white"/>
+          <path d="M65.486 34.8548C70.5136 34.8548 74.1033 32.1641 75.1905 27.8411L71.4413 27.0409C70.7367 29.8591 68.623 31.5584 65.4828 31.5584C61.3511 31.5584 58.2746 28.7083 58.2746 23.3906C58.2746 18.0729 61.3829 15.1909 65.4828 15.1909C68.5912 15.1909 70.8642 17.0176 71.505 20.0272L75.2191 19.227C74.4189 14.7732 70.6698 11.9231 65.4828 11.9231C59.7507 11.9231 54.4648 15.736 54.4648 23.3906C54.4648 31.0451 59.6869 34.858 65.4828 34.858L65.486 34.8548Z" fill="#161616"/>
+          <path d="M77.6868 34.5998H81.1777V27.6179C81.1777 23.6775 82.81 21.3406 85.5007 21.3406C87.6782 21.3406 89.0235 22.6541 89.0235 24.7997V34.5998H92.5145V23.9963C92.5145 20.4735 90.1107 18.1972 86.4603 18.1972C84.1872 18.1972 82.2967 19.2237 81.1745 21.2386V11.9167H77.6836V34.5998H77.6868Z" fill="#161616"/>
+          <path d="M103.309 34.8548C108.145 34.8548 111.636 31.3639 111.636 26.5276C111.636 21.6913 108.145 18.2004 103.309 18.2004C98.4724 18.2004 94.9814 21.6913 94.9814 26.5276C94.9814 31.3639 98.4405 34.8548 103.309 34.8548ZM98.5043 26.5276C98.5043 23.4192 100.427 21.2418 103.309 21.2418C106.191 21.2418 108.113 23.4192 108.113 26.5276C108.113 29.636 106.159 31.8134 103.309 31.8134C100.459 31.8134 98.5043 29.636 98.5043 26.5276Z" fill="#161616"/>
+          <path d="M117.285 34.5997H120.489L123.98 23.3554L127.471 34.5997H130.707L135.671 18.4554H132.116L129.075 29.7316L125.616 18.4554H122.38L118.889 29.7316L115.848 18.4554H112.293L117.289 34.5997H117.285W" fill="#161616"/>
+          <path d="M137.899 34.5998H141.454V18.1366L151.767 34.5998H155.708V12.1781H152.121V28.6731L141.84 12.1781H137.899V34.5998Z" fill="#161616"/>
+          <path d="M166.679 34.8548C171.515 34.8548 175.006 31.3639 175.006 26.5276C175.006 21.6913 171.515 18.2004 166.679 18.2004C161.842 18.2004 158.352 21.6913 158.352 26.5276C158.352 31.3639 161.811 34.8548 166.679 34.8548ZM161.874 26.5276C161.874 23.4192 163.797 21.2418 166.679 21.2418C169.561 21.2418 171.483 23.4192 171.483 26.5276C171.483 29.636 169.529 31.8134 166.679 31.8134C163.829 31.8134 161.874 29.636 161.874 26.5276Z" fill="#161616"/>
+          <path d="M180.655 34.5997H183.859L187.35 23.3554L190.841 34.5997H194.077L199.04 18.4554H195.486L192.444 29.7316L188.985 18.4554H185.749L182.258 29.7316L179.214 18.4554H175.659L180.658 34.5997H180.655Z" fill="#161616"/>
+          <path d="M45.5855 23.2216C45.5855 10.6446 35.508 0.449219 23.0905 0.449219C10.673 0.449219 0.585938 10.6446 0.585938 23.2216C0.585938 23.5436 0.595502 23.8528 0.608254 24.1652C0.585938 25.1727 0.694332 27.4234 1.73045 30.3947C2.67412 33.2799 4.16613 35.9069 6.09491 38.1449C9.16821 42.0152 13.9248 46.1852 21.3084 50.0141C22.421 50.5943 23.744 50.5943 24.8567 50.0141C32.2402 46.1756 37.0096 42.0152 40.0701 38.1449C41.9989 35.9037 43.4909 33.2767 44.4346 30.3947C45.4739 27.4362 45.5791 25.1727 45.5568 24.1652C45.5663 23.8432 45.5791 23.534 45.5791 23.2216H45.5855ZM13.9662 12.9815C14.6963 12.2419 15.8727 12.2738 16.5741 13.0357L21.3211 18.245L19.2648 20.5085L14.03 15.618C13.2681 14.9198 13.2457 13.7211 13.9662 12.9815V12.9815ZM35.8555 31.7656C35.7375 31.8835 35.5494 31.8835 35.4219 31.7656L30.9937 26.6934C30.6876 26.3809 30.1999 26.3809 29.8906 26.6934C29.5846 27.0058 29.5846 27.4968 29.8906 27.8092L34.3603 32.8368C34.5707 33.0504 34.5707 33.417 34.3603 33.6306C34.1499 33.8442 33.7896 33.8442 33.576 33.6306L28.6058 29.1067C28.2998 28.7943 27.812 28.7943 27.5028 29.1067C27.1967 29.4192 27.1967 29.9101 27.5028 30.2226L32.5144 34.705C32.6324 34.8229 32.6324 35.0174 32.5144 35.1449C32.4283 35.231 32.304 35.2533 32.186 35.2214C32.186 35.2214 28.7206 33.9143 26.964 32.1322C25.8832 31.0387 25.3413 29.7188 25.3221 28.4882L25.3126 28.4978C25.303 27.264 25.472 26.4511 24.4231 25.3671L23.1001 24.1238L21.7005 25.4309C20.6516 26.7826 20.8939 27.6944 20.8939 28.7975L20.8843 28.7879C20.862 30.095 20.2914 31.4882 19.1469 32.6487C17.0077 34.8134 13.0449 35.993 11.3265 34.2459C9.5986 32.4988 10.7654 28.4882 12.9046 26.3236C14.0491 25.1663 15.4264 24.5861 16.7175 24.5637L16.708 24.5542C17.7983 24.5446 18.6686 24.7678 19.9502 23.687L29.6451 13.0516C30.3433 12.2897 31.5197 12.2578 32.253 12.9974C32.9831 13.7371 32.9512 14.9262 32.1988 15.634L25.0256 22.3353L26.1925 23.6105C27.2509 24.6498 28.0575 24.4904 29.2753 24.5L29.2658 24.5095C30.4932 24.5319 31.7875 25.077 32.8683 26.1705C34.6281 27.9495 35.9097 31.4468 35.9097 31.4468C35.9639 31.5424 35.9416 31.6731 35.8555 31.7688V31.7656Z" fill="#161616"/>
+        </svg>
+      </a>
+
+      <a href="get-started.html" class="lg:hidden bg-cn-black text-white text-[12px] sm:text-[13px] font-roboto font-semibold px-5 sm:px-6 py-2 sm:py-2.5 rounded-full hover:bg-cn-dark transition-colors tracking-wider uppercase">Book A Demo</a>
+
+      <!-- ===== Desktop Navigation ===== -->
+      <nav class="hidden lg:flex items-center">
+
+        <!-- PRODUCT -->
+        <div class="mega-parent relative">
+          <button class="nav-link px-5 xl:px-7 py-2 text-[15px] font-roboto font-medium text-cn-black tracking-[0.14em] uppercase">
+            Product
+          </button>
+          <div class="mega-dropdown absolute top-full left-1/2 -translate-x-1/2 pt-5 w-[780px]">
+            <div class="bg-white border border-cn-light rounded-2xl shadow-2xl p-8 grid grid-cols-2 gap-8">
+              <div>
+                <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">Ordering</h3>
+                <ul class="space-y-[10px] list-none p-0 m-0">
+                  <li><a href="products/products-online-ordering.html" class="drop-link block text-[14px] font-roboto text-cn-black">Online Ordering</a></li>
+                  <li><a href="products/products-mobile-apps.html" class="drop-link block text-[14px] font-roboto text-cn-black">Branded Mobile Apps</a></li>
+                  <li><a href="products/products-website-builder.html" class="drop-link block text-[14px] font-roboto text-cn-black">Website Builder</a></li>
+                  <li><a href="products/products-marketplace.html" class="drop-link block text-[14px] font-roboto text-cn-black">Marketplace</a></li>
+                  <li><a href="products/products-discovery-network.html" class="drop-link block text-[14px] font-roboto text-cn-black">Discovery Network</a></li>
+                  <li><a href="products/products-catering.html" class="drop-link pill-link block text-[14px] font-roboto text-cn-black">Catering</a></li>
+                  <li><a href="products/products-qr-code.html" class="drop-link pill-link block text-[14px] font-roboto text-cn-black">QR Code Ordering</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">Marketing</h3>
+                <ul class="space-y-[10px] list-none p-0 m-0 mb-5">
+                  <li><a href="products/products-email-sms.html" class="drop-link pill-link block text-[14px] font-roboto text-cn-black">Email & Text Marketing</a></li>
+                  <li><a href="products/products-rewards.html" class="drop-link block text-[14px] font-roboto text-cn-black">Rewards Program</a></li>
+                </ul>
+                <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">Operations</h3>
+                <ul class="space-y-[10px] list-none p-0 m-0">
+                  <li><a href="products/products-flex-delivery.html" class="drop-link block text-[14px] font-roboto text-cn-black">Flex Delivery</a></li>
+                  <li><a href="products/products-order-aggregation.html" class="drop-link block text-[14px] font-roboto text-cn-black">Order Aggregation</a></li>
+                  <li><a href="products/products-advanced-reporting.html" class="drop-link block text-[14px] font-roboto text-cn-black">Advanced Reporting</a></li>
+                </ul>
+                <div class="mt-6 bg-cn-blue rounded-xl p-5">
+                  <h4 class="font-roboto font-semibold text-cn-black text-sm mb-2">Q2 Feature Release</h4>
+                  <a href="products/products-q2-feature-release.html" class="inline-block text-xs font-roboto font-semibold text-cn-black underline hover:opacity-60">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INTEGRATIONS -->
+        <div class="mega-parent relative">
+          <button class="nav-link px-5 xl:px-7 py-2 text-[15px] font-roboto font-medium text-cn-black tracking-[0.14em] uppercase">
+            Integrations
+          </button>
+          <div class="mega-dropdown absolute top-full left-1/2 -translate-x-1/2 pt-5 w-[780px]">
+            <div class="bg-white border border-cn-light rounded-2xl shadow-2xl p-8 grid grid-cols-2 gap-8">
+              <div>
+                <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">POS Integrations</h3>
+                <ul class="space-y-[10px] list-none p-0 m-0">
+                  <li><a href="integrations/clover.html" class="drop-link block text-[14px] font-roboto text-cn-black">Clover</a></li>
+                  <li><a href="integrations/genius.html" class="drop-link block text-[14px] font-roboto text-cn-black">Genius (Heartland)</a></li>
+                  <li><a href="integrations/integrations-revel.html" class="drop-link block text-[14px] font-roboto text-cn-black">Revel</a></li>
+                  <li><a href="integrations/integrations-skytab.html" class="drop-link block text-[14px] font-roboto text-cn-black">Skytab</a></li>
+                  <li><a href="integrations/integrations-square.html" class="drop-link block text-[14px] font-roboto text-cn-black">Square</a></li>
+                  <li><a href="integrations/integrations-toast.html" class="drop-link block text-[14px] font-roboto text-cn-black">Toast</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">Delivery App Integrations</h3>
+                <ul class="space-y-[10px] list-none p-0 m-0 mb-5">
+                  <li><a href="integrations/doordash.html" class="drop-link block text-[14px] font-roboto text-cn-black">DoorDash</a></li>
+                  <li><a href="integrations/integrations-ubereats.html" class="drop-link block text-[14px] font-roboto text-cn-black">UberEats</a></li>
+                  <li><a href="integrations/integrations-grubhub.html" class="drop-link block text-[14px] font-roboto text-cn-black">Grubhub</a></li>
+                </ul>
+                <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">Discovery Network</h3>
+                <ul class="space-y-[10px] list-none p-0 m-0 mb-5">
+                  <li><a href="integrations/google.html" class="drop-link block text-[14px] font-roboto text-cn-black">Google</a></li>
+                  <li><a href="integrations/apple-maps.html" class="drop-link block text-[14px] font-roboto text-cn-black">Apple Maps</a></li>
+                  <li><a href="integrations/yelp.html" class="drop-link block text-[14px] font-roboto text-cn-black">Yelp</a></li>
+                </ul>
+                <div class="bg-cn-blue rounded-xl p-5">
+                  <h4 class="font-roboto font-semibold text-cn-black text-sm mb-2">See all 20+ ChowNow Integrations</h4>
+                  <a href="integrations/all.html" class="inline-block text-xs font-roboto font-semibold text-cn-black underline hover:opacity-60">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRICING -->
+        <a href="pricing.html" class="nav-link px-5 xl:px-7 py-2 text-[15px] font-roboto font-medium text-cn-black tracking-[0.14em] uppercase">Pricing</a>
+
+        <!-- RESOURCES -->
+        <div class="mega-parent relative">
+          <button class="nav-link px-5 xl:px-7 py-2 text-[15px] font-roboto font-medium text-cn-black tracking-[0.14em] uppercase">
+            Resources
+          </button>
+          <div class="mega-dropdown absolute top-full left-1/2 -translate-x-1/2 pt-5 w-[640px]">
+            <div class="bg-white border border-cn-light rounded-2xl shadow-2xl p-8 grid grid-cols-2 gap-8">
+              <div>
+                <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">Learn & Grow</h3>
+                <ul class="space-y-[10px] list-none p-0 m-0">
+                  <li><a href="resources/blog.html" class="drop-link block text-[14px] font-roboto text-cn-black">Blog</a></li>
+                  <li><a href="resources/resources-guides.html" class="drop-link block text-[14px] font-roboto text-cn-black">Restaurant Guides</a></li>
+                  <li><a href="resources/resources-marketing.html" class="drop-link block text-[14px] font-roboto text-cn-black">Restaurant Marketing</a></li>
+                  <li><a href="resources/seo-for-restaurants.html" class="drop-link block text-[14px] font-roboto text-cn-black">SEO for Restaurants</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">Customer Stories</h3>
+                <ul class="space-y-[10px] list-none p-0 m-0 mb-5">
+                  <li><a href="resources/resources-case-studies.html" class="drop-link block text-[14px] font-roboto text-cn-black">Case Studies</a></li>
+                </ul>
+                <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">Support</h3>
+                <ul class="space-y-[10px] list-none p-0 m-0">
+                  <li><a href="resources/support.html" class="drop-link block text-[14px] font-roboto text-cn-black">Restaurant Support</a></li>
+                  <li><a href="resources/diner-support.html" class="drop-link block text-[14px] font-roboto text-cn-black">Diner Support</a></li>
+                  <li><a href="https://chownow.com/" class="drop-link block text-[14px] font-roboto text-cn-black">ChowNow Marketplace</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMPANY -->
+        <div class="mega-parent relative">
+          <button class="nav-link px-5 xl:px-7 py-2 text-[15px] font-roboto font-medium text-cn-black tracking-[0.14em] uppercase">
+            Company
+          </button>
+          <div class="mega-dropdown absolute top-full right-0 pt-5 w-[560px]">
+            <div class="bg-white border border-cn-light rounded-2xl shadow-2xl p-8 grid grid-cols-2 gap-8">
+              <div>
+                <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">About ChowNow</h3>
+                <ul class="space-y-[10px] list-none p-0 m-0">
+                  <li><a href="company/why-chownow.html" class="drop-link block text-[14px] font-roboto text-cn-black">Why ChowNow</a></li>
+                  <li><a href="company/about.html" class="drop-link block text-[14px] font-roboto text-cn-black">About Us</a></li>
+                  <li><a href="company/reviews.html" class="drop-link block text-[14px] font-roboto text-cn-black">Our Reviews</a></li>
+                  <li><a href="company/careers.html" class="drop-link block text-[14px] font-roboto text-cn-black">Careers</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">Partners & Contact</h3>
+                <ul class="space-y-[10px] list-none p-0 m-0">
+                  <li><a href="company/partners.html" class="drop-link block text-[14px] font-roboto text-cn-black">Our Partners</a></li>
+                  <li><a href="company/contact.html" class="drop-link block text-[14px] font-roboto text-cn-black">Contact Us</a></li>
+                  <li><a href="refer.html" class="drop-link block text-[14px] font-roboto text-cn-black">Refer a Restaurant</a></li>
+                  <li><a href="affiliates/partner-signup.html" class="drop-link block text-[14px] font-roboto text-cn-black">Become a Partner</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LOGIN -->
+        <a href="login.html" class="nav-link px-5 xl:px-7 py-2 text-[15px] font-roboto font-medium text-cn-black tracking-[0.14em] uppercase">Login</a>
+
+        <!-- BOOK A DEMO -->
+        <a href="get-started.html" class="ml-3 xl:ml-4 bg-cn-black text-white text-[14px] font-roboto font-semibold px-6 xl:px-8 py-3 rounded-full hover:bg-cn-dark transition-colors tracking-[0.1em] uppercase">Book A Demo</a>
+      </nav>
+
+      <button id="mobile-toggle" class="lg:hidden p-2 -mr-2" aria-label="Open menu">
+        <span class="block w-[22px] h-[2px] bg-cn-black rounded-sm mb-[5px]"></span>
+        <span class="block w-[22px] h-[2px] bg-cn-black rounded-sm mb-[5px]"></span>
+        <span class="block w-[22px] h-[2px] bg-cn-black rounded-sm"></span>
+      </button>
+    </div>
+    <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="star-sep" data-char=" * "></div>
+    </div>
+  </header>
+
+  <!-- ===================== MOBILE MENU ===================== -->
+  <div id="mobile-menu" class="mobile-menu fixed inset-0 z-[60] bg-white">
+    <div class="flex items-center justify-between px-4 sm:px-5 h-[68px]">
+      <a href="index.html" aria-label="ChowNow Home">
+        <svg viewBox="0 0 200 51" fill="none" class="h-[28px] w-auto" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="23.0854" cy="23.2582" r="18.3188" fill="white"/>
+          <path d="M65.486 34.8548C70.5136 34.8548 74.1033 32.1641 75.1905 27.8411L71.4413 27.0409C70.7367 29.8591 68.623 31.5584 65.4828 31.5584C61.3511 31.5584 58.2746 28.7083 58.2746 23.3906C58.2746 18.0729 61.3829 15.1909 65.4828 15.1909C68.5912 15.1909 70.8642 17.0176 71.505 20.0272L75.2191 19.227C74.4189 14.7732 70.6698 11.9231 65.4828 11.9231C59.7507 11.9231 54.4648 15.736 54.4648 23.3906C54.4648 31.0451 59.6869 34.858 65.4828 34.858L65.486 34.8548Z" fill="#161616"/>
+          <path d="M77.6868 34.5998H81.1777V27.6179C81.1777 23.6775 82.81 21.3406 85.5007 21.3406C87.6782 21.3406 89.0235 22.6541 89.0235 24.7997V34.5998H92.5145V23.9963C92.5145 20.4735 90.1107 18.1972 86.4603 18.1972C84.1872 18.1972 82.2967 19.2237 81.1745 21.2386V11.9167H77.6836V34.5998H77.6868Z" fill="#161616"/>
+          <path d="M103.309 34.8548C108.145 34.8548 111.636 31.3639 111.636 26.5276C111.636 21.6913 108.145 18.2004 103.309 18.2004C98.4724 18.2004 94.9814 21.6913 94.9814 26.5276C94.9814 31.3639 98.4405 34.8548 103.309 34.8548ZM98.5043 26.5276C98.5043 23.4192 100.427 21.2418 103.309 21.2418C106.191 21.2418 108.113 23.4192 108.113 26.5276C108.113 29.636 106.159 31.8134 103.309 31.8134C100.459 31.8134 98.5043 29.636 98.5043 26.5276Z" fill="#161616"/>
+          <path d="M117.285 34.5997H120.489L123.98 23.3554L127.471 34.5997H130.707L135.671 18.4554H132.116L129.075 29.7316L125.616 18.4554H122.38L118.889 29.7316L115.848 18.4554H112.293L117.289 34.5997H117.285W" fill="#161616"/>
+          <path d="M137.899 34.5998H141.454V18.1366L151.767 34.5998H155.708V12.1781H152.121V28.6731L141.84 12.1781H137.899V34.5998Z" fill="#161616"/>
+          <path d="M166.679 34.8548C171.515 34.8548 175.006 31.3639 175.006 26.5276C175.006 21.6913 171.515 18.2004 166.679 18.2004C161.842 18.2004 158.352 21.6913 158.352 26.5276C158.352 31.3639 161.811 34.8548 166.679 34.8548ZM161.874 26.5276C161.874 23.4192 163.797 21.2418 166.679 21.2418C169.561 21.2418 171.483 23.4192 171.483 26.5276C171.483 29.636 169.529 31.8134 166.679 31.8134C163.829 31.8134 161.874 29.636 161.874 26.5276Z" fill="#161616"/>
+          <path d="M180.655 34.5997H183.859L187.35 23.3554L190.841 34.5997H194.077L199.04 18.4554H195.486L192.444 29.7316L188.985 18.4554H185.749L182.258 29.7316L179.214 18.4554H175.659L180.658 34.5997H180.655Z" fill="#161616"/>
+          <path d="M45.5855 23.2216C45.5855 10.6446 35.508 0.449219 23.0905 0.449219C10.673 0.449219 0.585938 10.6446 0.585938 23.2216C0.585938 23.5436 0.595502 23.8528 0.608254 24.1652C0.585938 25.1727 0.694332 27.4234 1.73045 30.3947C2.67412 33.2799 4.16613 35.9069 6.09491 38.1449C9.16821 42.0152 13.9248 46.1852 21.3084 50.0141C22.421 50.5943 23.744 50.5943 24.8567 50.0141C32.2402 46.1756 37.0096 42.0152 40.0701 38.1449C41.9989 35.9037 43.4909 33.2767 44.4346 30.3947C45.4739 27.4362 45.5791 25.1727 45.5568 24.1652C45.5663 23.8432 45.5791 23.534 45.5791 23.2216H45.5855ZM13.9662 12.9815C14.6963 12.2419 15.8727 12.2738 16.5741 13.0357L21.3211 18.245L19.2648 20.5085L14.03 15.618C13.2681 14.9198 13.2457 13.7211 13.9662 12.9815V12.9815ZM35.8555 31.7656C35.7375 31.8835 35.5494 31.8835 35.4219 31.7656L30.9937 26.6934C30.6876 26.3809 30.1999 26.3809 29.8906 26.6934C29.5846 27.0058 29.5846 27.4968 29.8906 27.8092L34.3603 32.8368C34.5707 33.0504 34.5707 33.417 34.3603 33.6306C34.1499 33.8442 33.7896 33.8442 33.576 33.6306L28.6058 29.1067C28.2998 28.7943 27.812 28.7943 27.5028 29.1067C27.1967 29.4192 27.1967 29.9101 27.5028 30.2226L32.5144 34.705C32.6324 34.8229 32.6324 35.0174 32.5144 35.1449C32.4283 35.231 32.304 35.2533 32.186 35.2214C32.186 35.2214 28.7206 33.9143 26.964 32.1322C25.8832 31.0387 25.3413 29.7188 25.3221 28.4882L25.3126 28.4978C25.303 27.264 25.472 26.4511 24.4231 25.3671L23.1001 24.1238L21.7005 25.4309C20.6516 26.7826 20.8939 27.6944 20.8939 28.7975L20.8843 28.7879C20.862 30.095 20.2914 31.4882 19.1469 32.6487C17.0077 34.8134 13.0449 35.993 11.3265 34.2459C9.5986 32.4988 10.7654 28.4882 12.9046 26.3236C14.0491 25.1663 15.4264 24.5861 16.7175 24.5637L16.708 24.5542C17.7983 24.5446 18.6686 24.7678 19.9502 23.687L29.6451 13.0516C30.3433 12.2897 31.5197 12.2578 32.253 12.9974C32.9831 13.7371 32.9512 14.9262 32.1988 15.634L25.0256 22.3353L26.1925 23.6105C27.2509 24.6498 28.0575 24.4904 29.2753 24.5L29.2658 24.5095C30.4932 24.5319 31.7875 25.077 32.8683 26.1705C34.6281 27.9495 35.9097 31.4468 35.9097 31.4468C35.9639 31.5424 35.9416 31.6731 35.8555 31.7688V31.7656Z" fill="#161616"/>
+        </svg>
+      </a>
+      <button id="mobile-close" class="p-2"><i data-lucide="x" class="w-6 h-6 text-cn-black"></i></button>
+    </div>
+    <div class="star-sep" data-char=" * "></div>
+    <div class="overflow-y-auto h-[calc(100vh-88px)] px-4 sm:px-5">
+      <div class="mobile-accordion">
+        <button class="mobile-acc-tog w-full flex items-center justify-between py-4 text-[15px] font-roboto font-medium text-cn-black tracking-[0.1em] uppercase">
+          Product <i data-lucide="chevron-down" class="w-4 h-4 faq-chevron"></i>
+        </button>
+        <div class="mobile-acc-content hidden px-4 pb-4">
+          <p class="font-ibm-cond text-[10px] font-bold tracking-[0.18em] uppercase mb-3 text-cn-gray">Ordering</p>
+          <ul class="space-y-[9px] list-none p-0 m-0 mb-5">
+            <li><a href="products/products-online-ordering.html" class="block text-[14px] font-roboto text-cn-black">Online Ordering</a></li>
+            <li><a href="products/products-mobile-apps.html" class="block text-[14px] font-roboto text-cn-black">Branded Mobile Apps</a></li>
+            <li><a href="products/products-website-builder.html" class="block text-[14px] font-roboto text-cn-black">Website Builder</a></li>
+            <li><a href="products/products-marketplace.html" class="block text-[14px] font-roboto text-cn-black">Marketplace</a></li>
+            <li><a href="products/products-discovery-network.html" class="block text-[14px] font-roboto text-cn-black">Discovery Network</a></li>
+            <li><a href="products/products-catering.html" class="block text-[14px] font-roboto text-cn-black">Catering</a></li>
+            <li><a href="products/products-qr-code.html" class="block text-[14px] font-roboto text-cn-black">QR Code Ordering</a></li>
+          </ul>
+          <p class="font-ibm-cond text-[10px] font-bold tracking-[0.18em] uppercase mb-3 text-cn-gray">Marketing</p>
+          <ul class="space-y-[9px] list-none p-0 m-0 mb-5">
+            <li><a href="products/products-email-sms.html" class="block text-[14px] font-roboto text-cn-black">Email & Text Marketing</a></li>
+            <li><a href="products/products-rewards.html" class="block text-[14px] font-roboto text-cn-black">Rewards Program</a></li>
+          </ul>
+          <p class="font-ibm-cond text-[10px] font-bold tracking-[0.18em] uppercase mb-3 text-cn-gray">Operations</p>
+          <ul class="space-y-[9px] list-none p-0 m-0">
+            <li><a href="products/products-flex-delivery.html" class="block text-[14px] font-roboto text-cn-black">Flex Delivery</a></li>
+            <li><a href="products/products-order-aggregation.html" class="block text-[14px] font-roboto text-cn-black">Order Aggregation</a></li>
+            <li><a href="products/products-advanced-reporting.html" class="block text-[14px] font-roboto text-cn-black">Advanced Reporting</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="star-sep" data-char=" * "></div>
+      <div class="mobile-accordion">
+        <button class="mobile-acc-tog w-full flex items-center justify-between py-4 text-[15px] font-roboto font-medium text-cn-black tracking-[0.1em] uppercase">
+          Integrations <i data-lucide="chevron-down" class="w-4 h-4 faq-chevron"></i>
+        </button>
+        <div class="mobile-acc-content hidden px-4 pb-4">
+          <p class="font-ibm-cond text-[10px] font-bold tracking-[0.18em] uppercase mb-3 text-cn-gray">POS Integrations</p>
+          <ul class="space-y-[9px] list-none p-0 m-0 mb-5">
+            <li><a href="integrations/clover.html" class="block text-[14px] font-roboto text-cn-black">Clover</a></li>
+            <li><a href="integrations/integrations-toast.html" class="block text-[14px] font-roboto text-cn-black">Toast</a></li>
+            <li><a href="integrations/integrations-square.html" class="block text-[14px] font-roboto text-cn-black">Square</a></li>
+            <li><a href="integrations/all.html" class="block text-[14px] font-roboto text-cn-black">See all 20+</a></li>
+          </ul>
+          <p class="font-ibm-cond text-[10px] font-bold tracking-[0.18em] uppercase mb-3 text-cn-gray">Delivery Apps</p>
+          <ul class="space-y-[9px] list-none p-0 m-0 mb-5">
+            <li><a href="integrations/doordash.html" class="block text-[14px] font-roboto text-cn-black">DoorDash</a></li>
+            <li><a href="integrations/integrations-ubereats.html" class="block text-[14px] font-roboto text-cn-black">UberEats</a></li>
+            <li><a href="integrations/integrations-grubhub.html" class="block text-[14px] font-roboto text-cn-black">Grubhub</a></li>
+          </ul>
+          <p class="font-ibm-cond text-[10px] font-bold tracking-[0.18em] uppercase mb-3 text-cn-gray">Discovery Network</p>
+          <ul class="space-y-[9px] list-none p-0 m-0">
+            <li><a href="integrations/google.html" class="block text-[14px] font-roboto text-cn-black">Google</a></li>
+            <li><a href="integrations/apple-maps.html" class="block text-[14px] font-roboto text-cn-black">Apple Maps</a></li>
+            <li><a href="integrations/yelp.html" class="block text-[14px] font-roboto text-cn-black">Yelp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="star-sep" data-char=" * "></div>
+      <a href="pricing.html" class="block py-4 text-[15px] font-roboto font-medium text-cn-black tracking-[0.1em] uppercase">Pricing</a>
+      <div class="star-sep" data-char=" * "></div>
+      <div class="mobile-accordion">
+        <button class="mobile-acc-tog w-full flex items-center justify-between py-4 text-[15px] font-roboto font-medium text-cn-black tracking-[0.1em] uppercase">
+          Resources <i data-lucide="chevron-down" class="w-4 h-4 faq-chevron"></i>
+        </button>
+        <div class="mobile-acc-content hidden px-4 pb-4">
+          <ul class="space-y-[9px] list-none p-0 m-0">
+            <li><a href="resources/blog.html" class="block text-[14px] font-roboto text-cn-black">Blog</a></li>
+            <li><a href="resources/resources-guides.html" class="block text-[14px] font-roboto text-cn-black">Restaurant Guides</a></li>
+            <li><a href="resources/resources-case-studies.html" class="block text-[14px] font-roboto text-cn-black">Case Studies</a></li>
+            <li><a href="resources/support.html" class="block text-[14px] font-roboto text-cn-black">Restaurant Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="star-sep" data-char=" * "></div>
+      <div class="mobile-accordion">
+        <button class="mobile-acc-tog w-full flex items-center justify-between py-4 text-[15px] font-roboto font-medium text-cn-black tracking-[0.1em] uppercase">
+          Company <i data-lucide="chevron-down" class="w-4 h-4 faq-chevron"></i>
+        </button>
+        <div class="mobile-acc-content hidden px-4 pb-4">
+          <ul class="space-y-[9px] list-none p-0 m-0">
+            <li><a href="company/why-chownow.html" class="block text-[14px] font-roboto text-cn-black">Why ChowNow</a></li>
+            <li><a href="company/about.html" class="block text-[14px] font-roboto text-cn-black">About Us</a></li>
+            <li><a href="company/careers.html" class="block text-[14px] font-roboto text-cn-black">Careers</a></li>
+            <li><a href="company/contact.html" class="block text-[14px] font-roboto text-cn-black">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="star-sep" data-char=" * "></div>
+      <div class="pt-6">
+        <a href="login.html" class="block w-full border border-cn-black text-cn-black text-center font-roboto font-medium text-[14px] py-3 rounded-full tracking-wider uppercase">Login</a>
+      </div>
+      <p class="text-xs font-roboto text-cn-gray text-center pt-4 pb-8">Call or text 888.707.2469 for support</p>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="mobile-menu fixed inset-0 z-[60] bg-cn-bg"><div class="flex items-center justify-between px-6 h-[80px]"><a href="../index.html"><svg viewBox="0 0 200 51" fill="none" class="h-[36px] w-auto"><circle cx="23.0854" cy="23.2582" r="18.3188" fill="white"/><path d="M65.486 34.8548C70.5136 34.8548 74.1033 32.1641 75.1905 27.8411L71.4413 27.0409C70.7367 29.8591 68.623 31.5584 65.4828 31.5584C61.3511 31.5584 58.2746 28.7083 58.2746 23.3906C58.2746 18.0729 61.3829 15.1909 65.4828 15.1909C68.5912 15.1909 70.8642 17.0176 71.505 20.0272L75.2191 19.227C74.4189 14.7732 70.6698 11.9231 65.4828 11.9231C59.7507 11.9231 54.4648 15.736 54.4648 23.3906C54.4648 31.0451 59.6869 34.858 65.4828 34.858L65.486 34.8548Z" fill="#161616"/><path d="M45.5855 23.2216C45.5855 10.6446 35.508.449219 23.0905.449219 10.673.449219.585938 10.6446.585938 23.2216c0 .322.0096.631.0223.944-.0223 1.007.0884 3.258 1.122 6.229.9437 2.885 2.4357 5.512 4.3645 7.75 3.0733 3.87 7.8299 8.04 15.2135 11.869 1.1126.58 2.4356.58 3.5483 0 7.3835-3.839 12.1529-7.999 15.2134-11.869 1.9288-2.241 3.4208-4.868 4.3645-7.75.9914-2.959 1.0966-5.222 1.0743-6.23.0095-.322.0223-.631.0223-.944h.0064z" fill="#161616"/></svg></a><button id="mobile-close" class="p-2"><i data-lucide="x" class="w-6 h-6 text-cn-black"></i></button></div><div class="star-sep" data-char=" * "></div><div class="overflow-y-auto h-[calc(100vh-100px)] px-6"><a href="all.html" class="block py-4 text-lg font-roboto font-medium text-cn-black">All Integrations</a><div class="star-sep" data-char=" * "></div><a href="clover.html" class="block py-4 text-lg font-roboto font-medium text-cn-black">Clover</a><div class="star-sep" data-char=" * "></div><a href="integrations-toast.html" class="block py-4 text-lg font-roboto font-medium text-cn-black">Toast</a><div class="star-sep" data-char=" * "></div><a href="integrations-square.html" class="block py-4 text-lg font-roboto font-medium text-cn-black">Square</a><div class="star-sep" data-char=" * "></div><a href="../pricing.html" class="block py-4 text-lg font-roboto font-medium text-cn-black">Pricing</a><div class="star-sep" data-char=" * "></div><div class="pt-6 space-y-3"><a href="../get-started.html" class="block w-full bg-cn-black text-white text-center font-roboto font-medium py-3.5 rounded-full">Book A Demo</a><a href="../login.html" class="block w-full border border-cn-black text-cn-black text-center font-roboto font-medium py-3.5 rounded-full">Login</a></div></div></div>
+
+ <main id="main-content" style="padding-top:96px;">
+    <section class="section-fade">
+      <div class="max-w-8xl mx-auto px-6 lg:px-10 py-12 lg:py-20">
+        <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+          <div class="flex-1">
+            <div class="inline-block bg-cn-blue rounded-full px-4 py-1.5 mb-6"><span class="text-sm font-roboto font-medium text-cn-black">POS Integration</span></div>
+            <h1 class="font-ibm text-[32px] sm:text-[42px] lg:text-[52px] xl:text-[60px] font-normal leading-[1.05] tracking-[-0.02em] text-cn-black mb-6">ChowNow +<br>Skytab</h1>
+            <p class="font-roboto text-[18px] lg:text-[20px] font-normal leading-[1.5] text-cn-gray mb-8 max-w-lg">Integrate ChowNow with your Skytab POS to reduce errors and save time.<br>Auto-accept and send orders directly to your POS and printers, no manual entry required.</p>
+            <a href="../get-started.html" class="inline-block bg-cn-black text-white font-roboto font-medium text-[16px] px-10 py-4 rounded-full hover:bg-cn-dark transition-colors">Book A Demo</a>
+          </div>
+          <div class="flex-1 w-full"><div class="relative rounded-[24px] overflow-hidden aspect-[4/3] bg-cn-blue flex items-center justify-center"><span class="font-ibm text-[64px] font-semibold text-cn-black">Skytab</span></div></div>
+        </div>
+      </div>
+    </section>
+    <div class="max-w-8xl mx-auto px-6 lg:px-10"><div class="star-sep" data-char=" * "></div></div>
+    <section class="section-fade">
+      <div class="max-w-8xl mx-auto px-6 lg:px-10 py-12 lg:py-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-[16px] p-8 border border-cn-light"><h3 class="font-ibm text-[24px] font-normal text-cn-black mb-4">How It Works</h3><ul class="space-y-3"><li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-cn-black flex-shrink-0 mt-0.5"></i><span class="font-roboto text-[16px] text-cn-gray">Customer places order on your ChowNow website or app</span></li><li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-cn-black flex-shrink-0 mt-0.5"></i><span class="font-roboto text-[16px] text-cn-gray">Order syncs directly to your Skytab Station automatically</span></li><li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-cn-black flex-shrink-0 mt-0.5"></i><span class="font-roboto text-[16px] text-cn-gray">Kitchen staff sees and fulfills the order like any other</span></li><li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-cn-black flex-shrink-0 mt-0.5"></i><span class="font-roboto text-[16px] text-cn-gray">Menu changes in Skytab sync back to your online ordering</span></li></ul></div>
+          <div class="bg-white rounded-[16px] p-8 border border-cn-light"><h3 class="font-ibm text-[24px] font-normal text-cn-black mb-4">Key Benefits</h3><ul class="space-y-3"><li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-cn-black flex-shrink-0 mt-0.5"></i><span class="font-roboto text-[16px] text-cn-gray">No additional hardware or tablets needed</span></li><li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-cn-black flex-shrink-0 mt-0.5"></i><span class="font-roboto text-[16px] text-cn-gray">Two-way menu sync keeps everything up to date</span></li><li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-cn-black flex-shrink-0 mt-0.5"></i><span class="font-roboto text-[16px] text-cn-gray">Supports Skytab Station, Mini, and Flex</span></li><li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-cn-black flex-shrink-0 mt-0.5"></i><span class="font-roboto text-[16px] text-cn-gray">Setup typically completed in 1-3 business days</span></li></ul></div>
+        </div>
+      </div>
+    </section>
+    <div class="max-w-8xl mx-auto px-6 lg:px-10"><div class="star-sep" data-char=" * "></div></div>
+    <section class="section-fade">
+      <div class="max-w-8xl mx-auto px-6 lg:px-10 py-12 lg:py-20">
+        <div class="bg-cn-green rounded-[20px] p-8 lg:p-14 flex flex-col lg:flex-row items-start gap-10 lg:gap-16">
+          <div class="flex-1 text-center lg:text-left"><h2 class="font-ibm text-[32px] sm:text-[40px] lg:text-[48px] font-normal leading-[1.05] tracking-[-0.02em] text-cn-black mb-6">Connect Clover to ChowNow</h2><p class="font-roboto text-[18px] lg:text-[20px] font-normal leading-[1.5] text-cn-black/70">See how the integration works in a personalized demo.</p></div>
+          <div class="w-full lg:w-[480px] flex-shrink-0"><form id="demo-form" class="bg-white rounded-[16px] p-6 lg:p-8 space-y-4"><div><label class="block font-roboto text-[14px] font-medium text-cn-black mb-1.5">First Name</label><input type="text" class="form-input w-full border border-cn-light rounded-lg px-4 py-3 font-roboto text-[15px] text-cn-black placeholder-cn-gray/50" placeholder="John"></div><div><label class="block font-roboto text-[14px] font-medium text-cn-black mb-1.5">Last Name</label><input type="text" class="form-input w-full border border-cn-light rounded-lg px-4 py-3 font-roboto text-[15px] text-cn-black placeholder-cn-gray/50" placeholder="Smith"></div><div><label class="block font-roboto text-[14px] font-medium text-cn-black mb-1.5">Business Email</label><input type="email" class="form-input w-full border border-cn-light rounded-lg px-4 py-3 font-roboto text-[15px] text-cn-black placeholder-cn-gray/50" placeholder="john@restaurant.com"></div><div><label class="block font-roboto text-[14px] font-medium text-cn-black mb-1.5">Restaurant Name</label><input type="text" class="form-input w-full border border-cn-light rounded-lg px-4 py-3 font-roboto text-[15px] text-cn-black placeholder-cn-gray/50" placeholder="My Restaurant"></div><button type="submit" class="w-full bg-cn-black text-white font-roboto font-medium text-[16px] py-4 rounded-full hover:bg-cn-dark transition-colors mt-2">Book A Demo</button></form><div id="form-thankyou" class="hidden bg-white rounded-[16px] p-8 text-center"><h3 class="font-ibm text-[28px] font-normal text-cn-black mb-4">Thank You!</h3><p class="font-roboto text-[16px] text-cn-gray">We'll be in touch shortly.</p></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="bg-cn-bg border-t border-cn-light"><div class="max-w-8xl mx-auto px-6 lg:px-10 pt-12 lg:pt-16"><div class="star-sep" data-char=" * "></div><div class="grid grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6 py-10 lg:py-14"><div class="col-span-2 lg:col-span-2"><h3 class="font-ibm-cond text-[13px] font-bold tracking-[0.15em] uppercase text-cn-black mb-5">Product</h3><div class="grid grid-cols-2 gap-x-6 gap-y-2"><div><ul class="space-y-2"><li><a href="../products/products-online-ordering.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Online Ordering</a></li><li><a href="../products/products-mobile-apps.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Mobile Apps</a></li><li><a href="../products/products-website-builder.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Website Builder</a></li><li><a href="../products/products-marketplace.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Marketplace</a></li><li><a href="../products/products-discovery-network.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Discovery Network</a></li></ul></div><div><ul class="space-y-2"><li><a href="../products/products-email-sms.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Email & Text</a></li><li><a href="../products/products-rewards.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Rewards</a></li><li><a href="../products/products-flex-delivery.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Flex Delivery</a></li><li><a href="../products/products-order-aggregation.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Order Aggregation</a></li><li><a href="../products/products-advanced-reporting.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Reporting</a></li></ul></div></div></div><div><h3 class="font-ibm-cond text-[13px] font-bold tracking-[0.15em] uppercase text-cn-black mb-5">Integrations</h3><ul class="space-y-2"><li><a href="clover.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Clover</a></li><li><a href="integrations-toast.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Toast</a></li><li><a href="integrations-square.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Square</a></li><li><a href="all.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">See all 20+</a></li></ul></div><div><h3 class="font-ibm-cond text-[13px] font-bold tracking-[0.15em] uppercase text-cn-black mb-5">Resources</h3><ul class="space-y-2"><li><a href="../resources/blog.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Blog</a></li><li><a href="../resources/resources-guides.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Guides</a></li><li><a href="../resources/support.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Support</a></li></ul></div><div><h3 class="font-ibm-cond text-[13px] font-bold tracking-[0.15em] uppercase text-cn-black mb-5">Company</h3><ul class="space-y-2"><li><a href="../company/about.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">About Us</a></li><li><a href="../company/careers.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Careers</a></li><li><a href="../company/contact.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Contact</a></li><li><a href="../refer.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Refer</a></li></ul></div></div><div class="star-sep" data-char=" ~ "></div><div class="flex flex-col sm:flex-row items-center justify-between gap-4 py-8"><div class="flex items-center gap-6"><a href="../pricing.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Pricing</a><a href="../login.html" class="text-[13px] font-roboto text-cn-black hover:opacity-60">Login</a><a href="../get-started.html" class="bg-cn-black text-white text-[13px] font-roboto font-medium px-6 py-2 rounded-full hover:bg-cn-dark">Book A Demo</a></div></div><div class="star-sep" data-char=" ~ "></div><div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-10"><p class="text-[12px] font-roboto text-cn-gray">© 2026 ChowNow. All Rights Reserved.</p><div class="flex items-center gap-4"><a href="../legal-terms.html" class="text-[12px] font-roboto text-cn-gray hover:text-cn-black">Terms</a><a href="../legal-privacy.html" class="text-[12px] font-roboto text-cn-gray hover:text-cn-black">Privacy</a></div></div></div></footer>
+  <script>lucide.createIcons();function fillStarSeparators(){document.querySelectorAll('.star-sep').forEach(el=>{const char=el.getAttribute('data-char')||' * ';const parent=el.parentElement;if(!parent)return;const s=getComputedStyle(parent);const pw=parent.clientWidth-parseFloat(s.paddingLeft)-parseFloat(s.paddingRight);const cw=Math.max(pw,300);const p=document.createElement('span');p.style.cssText='visibility:hidden;white-space:nowrap;position:absolute;font-family:"IBM Plex Condensed",sans-serif;font-size:inherit;letter-spacing:inherit;';p.textContent=char;el.appendChild(p);const cW=p.getBoundingClientRect().width||8;p.remove();const n=Math.max(0,Math.floor(cw/cW));el.innerHTML='';const inner=document.createElement('span');inner.className='star-sep-inner';inner.textContent=char.repeat(n);el.appendChild(inner);while(inner.scrollWidth>cw)inner.textContent=inner.textContent.slice(0,-char.length)})}fillStarSeparators();window.addEventListener('resize',fillStarSeparators);document.fonts.ready.then(fillStarSeparators);const mt=document.getElementById('mobile-toggle'),mc=document.getElementById('mobile-close'),mm=document.getElementById('mobile-menu');mt.addEventListener('click',()=>{mm.classList.add('open');document.body.style.overflow='hidden';setTimeout(fillStarSeparators,50)});mc.addEventListener('click',()=>{mm.classList.remove('open');document.body.style.overflow=''});document.querySelectorAll('.faq-toggle').forEach(b=>{b.addEventListener('click',()=>{const c=b.closest('.faq-card');const o=c.classList.contains('open');document.querySelectorAll('.faq-card').forEach(x=>x.classList.remove('open'));if(!o)c.classList.add('open')})});document.getElementById('demo-form').addEventListener('submit',function(e){e.preventDefault();this.classList.add('hidden');document.getElementById('form-thankyou').classList.remove('hidden')});const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');obs.unobserve(x.target)}})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});document.querySelectorAll('.section-fade').forEach(el=>obs.observe(el));const hdr=document.getElementById('site-header');window.addEventListener('scroll',()=>{hdr.style.boxShadow=window.pageYOffset>100?'0 1px 3px rgba(0,0,0,0.08)':'none'});document.addEventListener('click',e=>{if(!e.target.closest('.mega-parent'))document.querySelectorAll('.mega-parent').forEach(p=>p.classList.remove('open'))});mm.addEventListener('click',e=>{if(e.target===mm){mm.classList.remove('open');document.body.style.overflow=''}});</script>
+</body>
+</html>

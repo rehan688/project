@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1"><stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#f3f3f3"/></linearGradient>
+  </defs>
+  <rect width="600" height="420" rx="30" fill="url(#g)"/>
+  <circle cx="120" cy="120" r="58" fill="#161616" opacity=".08"/>
+  <rect x="220" y="80" width="320" height="70" rx="24" fill="#ffffff"/>
+  <rect x="220" y="180" width="320" height="40" rx="16" fill="#161616" opacity=".12"/>
+  <rect x="220" y="240" width="280" height="40" rx="16" fill="#161616" opacity=".12"/>
+  <text x="300" y="360" text-anchor="middle" font-family="IBM Plex Sans, Arial, sans-serif" font-weight="600" font-size="40" fill="#161616">Reviews</text>
+</svg>

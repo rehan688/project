@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#eef7ff"/>
+      <stop offset="100%" stop-color="#d6e9ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="32" fill="url(#g)"/>
+  <rect x="120" y="150" width="220" height="280" rx="28" fill="#ffffff"/>
+  <path d="M420 180h260v200H420z" fill="#ffffff" rx="24"/>
+  <circle cx="520" cy="420" r="30" fill="#161616" opacity=".1"/>
+  <path d="M160 430h180v24H160z" fill="#161616" opacity=".2"/>
+  <text x="400" y="470" text-anchor="middle" font-family="IBM Plex Sans, Arial, sans-serif" font-weight="600" font-size="44" fill="#161616">Marketing</text>
+</svg>

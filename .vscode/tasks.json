@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run fix_links.py",
+			"type": "shell",
+			"command": "python fix_links.py",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run fix_links_with_py.py",
+			"type": "shell",
+			"command": "py fix_links.py",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

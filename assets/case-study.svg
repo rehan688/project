@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1"><stop offset="0%" stop-color="#fff8f0"/><stop offset="100%" stop-color="#ffe6d7"/></linearGradient>
+  </defs>
+  <rect width="640" height="440" rx="32" fill="url(#g)"/>
+  <rect x="60" y="90" width="520" height="240" rx="26" fill="#ffffff"/>
+  <path d="M120 120h240v32H120zM120 180h360v28H120zM120 240h320v24H120z" fill="#161616" opacity=".1"/>
+  <text x="320" y="360" text-anchor="middle" font-family="IBM Plex Sans, Arial, sans-serif" font-weight="600" font-size="40" fill="#161616">Case Study</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#fff7f3"/>
+      <stop offset="100%" stop-color="#ffe9dd"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="32" fill="url(#g)"/>
+  <rect x="80" y="120" width="280" height="320" rx="24" fill="#ffffff"/>
+  <rect x="420" y="120" width="280" height="120" rx="20" fill="#ffffff"/>
+  <rect x="420" y="260" width="220" height="200" rx="20" fill="#161616" opacity=".05"/>
+  <circle cx="180" cy="220" r="50" fill="#161616" opacity=".08"/>
+  <text x="400" y="430" text-anchor="middle" font-family="IBM Plex Sans, Arial, sans-serif" font-weight="600" font-size="46" fill="#161616">Ordering</text>
+</svg>

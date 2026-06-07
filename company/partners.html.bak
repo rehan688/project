@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Partners | ChowNow</title>
+  <meta name="description" content="Our Partners page placeholder for the ChowNow local copy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Condensed:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { margin: 0; font-family: 'Roboto', sans-serif; background: #f8f8f8; color: #161616; }
+    a { color: #161616; text-decoration: none; }
+  </style>
+</head>
+<body class="min-h-screen bg-cn-bg">
+  <main class="max-w-5xl mx-auto px-6 py-20">
+    <h1 class="text-4xl font-bold mb-6">Our Partners</h1>
+    <p class="text-lg text-cn-gray mb-8">This page was added so the local ChowNow copy resolves existing menu and footer links correctly.</p>
+    <div class="flex items-center gap-4">
+      <a href="../index.html" class="inline-flex items-center gap-2 rounded-full bg-cn-black px-6 py-3 text-white">Home</a>
+      <a href="../pricing.html" class="inline-flex items-center gap-2 rounded-full border border-cn-black px-6 py-3 text-cn-black">Pricing</a>
+    </div>
+  </main>
+</body>
+</html>

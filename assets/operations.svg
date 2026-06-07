@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#eff9f2"/>
+      <stop offset="100%" stop-color="#ddefe4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="32" fill="url(#g)"/>
+  <rect x="140" y="140" width="220" height="220" rx="28" fill="#ffffff"/>
+  <rect x="440" y="140" width="220" height="220" rx="28" fill="#ffffff"/>
+  <rect x="290" y="360" width="220" height="120" rx="24" fill="#ffffff"/>
+  <path d="M250 180h80v24h-80zM250 230h120v20H250zM500 180h90v24h-90zM500 230h120v20H500z" fill="#161616" opacity=".2"/>
+  <text x="400" y="500" text-anchor="middle" font-family="IBM Plex Sans, Arial, sans-serif" font-weight="600" font-size="44" fill="#161616">Operations</text>
+</svg>

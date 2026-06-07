@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120">
+  <rect width="300" height="120" rx="24" fill="#ffffff" stroke="#d4d4d4" stroke-width="4"/>
+  <circle cx="70" cy="60" r="32" fill="#161616" opacity=".1"/>
+  <rect x="120" y="35" width="140" height="50" rx="18" fill="#161616" opacity=".08"/>
+  <text x="150" y="72" text-anchor="middle" font-family="IBM Plex Sans, Arial, sans-serif" font-weight="700" font-size="28" fill="#161616">Logo</text>
+</svg>

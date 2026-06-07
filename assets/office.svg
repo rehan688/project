@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1"><stop offset="0%" stop-color="#eff8ff"/><stop offset="100%" stop-color="#d8ecff"/></linearGradient>
+  </defs>
+  <rect width="700" height="500" rx="32" fill="url(#g)"/>
+  <rect x="110" y="120" width="480" height="260" rx="30" fill="#ffffff"/>
+  <path d="M140 170h420v180H140z" fill="#161616" opacity=".05"/>
+  <path d="M190 220h100v60h-100zM320 220h100v60h-100zM450 220h100v60h-100z" fill="#161616" opacity=".12"/>
+  <circle cx="190" cy="360" r="26" fill="#161616" opacity=".12"/>
+  <text x="350" y="440" text-anchor="middle" font-family="IBM Plex Sans, Arial, sans-serif" font-weight="600" font-size="40" fill="#161616">Office</text>
+</svg>
