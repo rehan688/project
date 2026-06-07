@@ -124,6 +124,13 @@
     @media (max-width: 767px) {
       .star-sep { font-size: 12px; padding: 5px 0; }
     }
+
+    .faq-chevron {
+  transition: transform 0.3s ease;
+}
+.faq-chevron.rotated {
+  transform: rotate(180deg);
+}
   </style>
 </head>
 <body class="bg-cn-bg">
@@ -131,7 +138,7 @@
   <!-- ========== HEADER ========== -->
   <header id="site-header" class="fixed top-0 left-0 right-0 z-50 bg-white">
     <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10 flex items-center justify-between h-[70px] sm:h-[80px] lg:h-[85px]">
-      <a href="index.html" class="flex-shrink-0" aria-label="ChowNow Home">
+      <a href="../project/index.html" class="flex-shrink-0" aria-label="ChowNow Home">
         <svg viewBox="0 0 200 51" fill="none" class="h-[36px] sm:h-[40px] lg:h-[47px] w-auto" xmlns="http://www.w3.org/2000/svg">
           <circle cx="23.0854" cy="23.2582" r="18.3188" fill="white"/>
           <path d="M65.486 34.8548C70.5136 34.8548 74.1033 32.1641 75.1905 27.8411L71.4413 27.0409C70.7367 29.8591 68.623 31.5584 65.4828 31.5584C61.3511 31.5584 58.2746 28.7083 58.2746 23.3906C58.2746 18.0729 61.3829 15.1909 65.4828 15.1909C68.5912 15.1909 70.8642 17.0176 71.505 20.0272L75.2191 19.227C74.4189 14.7732 70.6698 11.9231 65.4828 11.9231C59.7507 11.9231 54.4648 15.736 54.4648 23.3906C54.4648 31.0451 59.6869 34.858 65.4828 34.858L65.486 34.8548Z" fill="#161616"/>
@@ -145,7 +152,7 @@
         </svg>
       </a>
 
-      <a href="get-started.html" class="lg:hidden bg-cn-black text-white text-[12px] sm:text-[13px] font-roboto font-semibold px-5 sm:px-6 py-2 sm:py-2.5 rounded-full hover:bg-cn-dark transition-colors tracking-wider uppercase">Book A Demo</a>
+      <a href="../project/get-started.html" class="lg:hidden bg-cn-black text-white text-[12px] sm:text-[13px] font-roboto font-semibold px-5 sm:px-6 py-2 sm:py-2.5 rounded-full hover:bg-cn-dark transition-colors tracking-wider uppercase">Book A Demo</a>
 
       <!-- ===== Desktop Navigation ===== -->
       <nav class="hidden lg:flex items-center">
@@ -160,30 +167,30 @@
               <div>
                 <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">Ordering</h3>
                 <ul class="space-y-[10px] list-none p-0 m-0">
-                  <li><a href="products/products-online-ordering.html" class="drop-link block text-[14px] font-roboto text-cn-black">Online Ordering</a></li>
-                  <li><a href="products/products-mobile-apps.html" class="drop-link block text-[14px] font-roboto text-cn-black">Branded Mobile Apps</a></li>
-                  <li><a href="products/products-website-builder.html" class="drop-link block text-[14px] font-roboto text-cn-black">Website Builder</a></li>
-                  <li><a href="products/products-marketplace.html" class="drop-link block text-[14px] font-roboto text-cn-black">Marketplace</a></li>
-                  <li><a href="products/products-discovery-network.html" class="drop-link block text-[14px] font-roboto text-cn-black">Discovery Network</a></li>
-                  <li><a href="products/products-catering.html" class="drop-link pill-link block text-[14px] font-roboto text-cn-black">Catering</a></li>
-                  <li><a href="products/products-qr-code.html" class="drop-link pill-link block text-[14px] font-roboto text-cn-black">QR Code Ordering</a></li>
+                  <li><a href="../project/products/products-online-ordering.html" class="drop-link block text-[14px] font-roboto text-cn-black">Online Ordering</a></li>
+                  <li><a href="../project/products/products-mobile-apps.html" class="drop-link block text-[14px] font-roboto text-cn-black">Branded Mobile Apps</a></li>
+                  <li><a href="../project/products/products-website-builder.html" class="drop-link block text-[14px] font-roboto text-cn-black">Website Builder</a></li>
+                  <li><a href="../project/products/products-marketplace.html" class="drop-link block text-[14px] font-roboto text-cn-black">Marketplace</a></li>
+                  <li><a href="../project/products/products-discovery-network.html" class="drop-link block text-[14px] font-roboto text-cn-black">Discovery Network</a></li>
+                  <li><a href="../project/products/products-catering.html" class="drop-link pill-link block text-[14px] font-roboto text-cn-black">Catering</a></li>
+                  <li><a href="../project/products/products-qr-code.html" class="drop-link pill-link block text-[14px] font-roboto text-cn-black">QR Code Ordering</a></li>
                 </ul>
               </div>
               <div>
                 <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">Marketing</h3>
                 <ul class="space-y-[10px] list-none p-0 m-0 mb-5">
-                  <li><a href="products/products-email-sms.html" class="drop-link pill-link block text-[14px] font-roboto text-cn-black">Email & Text Marketing</a></li>
-                  <li><a href="products/products-rewards.html" class="drop-link block text-[14px] font-roboto text-cn-black">Rewards Program</a></li>
+                  <li><a href="../project/products/products-email-sms.html" class="drop-link pill-link block text-[14px] font-roboto text-cn-black">Email & Text Marketing</a></li>
+                  <li><a href="../project/products/products-rewards.html" class="drop-link block text-[14px] font-roboto text-cn-black">Rewards Program</a></li>
                 </ul>
                 <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">Operations</h3>
                 <ul class="space-y-[10px] list-none p-0 m-0">
-                  <li><a href="products/products-flex-delivery.html" class="drop-link block text-[14px] font-roboto text-cn-black">Flex Delivery</a></li>
-                  <li><a href="products/products-order-aggregation.html" class="drop-link block text-[14px] font-roboto text-cn-black">Order Aggregation</a></li>
-                  <li><a href="products/products-advanced-reporting.html" class="drop-link block text-[14px] font-roboto text-cn-black">Advanced Reporting</a></li>
+                  <li><a href="../project/products/products-flex-delivery.html" class="drop-link block text-[14px] font-roboto text-cn-black">Flex Delivery</a></li>
+                  <li><a href="../project/products/products-order-aggregation.html" class="drop-link block text-[14px] font-roboto text-cn-black">Order Aggregation</a></li>
+                  <li><a href="../project/products/products-advanced-reporting.html" class="drop-link block text-[14px] font-roboto text-cn-black">Advanced Reporting</a></li>
                 </ul>
                 <div class="mt-6 bg-cn-blue rounded-xl p-5">
                   <h4 class="font-roboto font-semibold text-cn-black text-sm mb-2">Q2 Feature Release</h4>
-                  <a href="products/products-q2-feature-release.html" class="inline-block text-xs font-roboto font-semibold text-cn-black underline hover:opacity-60">Learn More</a>
+                  <a href="../project/products/products-q2-feature-release.html" class="inline-block text-xs font-roboto font-semibold text-cn-black underline hover:opacity-60">Learn More</a>
                 </div>
               </div>
             </div>
@@ -200,30 +207,30 @@
               <div>
                 <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">POS Integrations</h3>
                 <ul class="space-y-[10px] list-none p-0 m-0">
-                  <li><a href="integrations/clover.html" class="drop-link block text-[14px] font-roboto text-cn-black">Clover</a></li>
-                  <li><a href="integrations/genius.html" class="drop-link block text-[14px] font-roboto text-cn-black">Genius (Heartland)</a></li>
-                  <li><a href="integrations/integrations-revel.html" class="drop-link block text-[14px] font-roboto text-cn-black">Revel</a></li>
-                  <li><a href="integrations/integrations-skytab.html" class="drop-link block text-[14px] font-roboto text-cn-black">Skytab</a></li>
-                  <li><a href="integrations/integrations-square.html" class="drop-link block text-[14px] font-roboto text-cn-black">Square</a></li>
-                  <li><a href="integrations/integrations-toast.html" class="drop-link block text-[14px] font-roboto text-cn-black">Toast</a></li>
+                  <li><a href="../project/integrations/clover.html" class="drop-link block text-[14px] font-roboto text-cn-black">Clover</a></li>
+                  <li><a href="../project/integrations/genius.html" class="drop-link block text-[14px] font-roboto text-cn-black">Genius (Heartland)</a></li>
+                  <li><a href="../project/integrations/integrations-revel.html" class="drop-link block text-[14px] font-roboto text-cn-black">Revel</a></li>
+                  <li><a href="../project/integrations/integrations-skytab.html" class="drop-link block text-[14px] font-roboto text-cn-black">Skytab</a></li>
+                  <li><a href="../project/integrations/integrations-square.html" class="drop-link block text-[14px] font-roboto text-cn-black">Square</a></li>
+                  <li><a href="../project/integrations/integrations-toast.html" class="drop-link block text-[14px] font-roboto text-cn-black">Toast</a></li>
                 </ul>
               </div>
               <div>
                 <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">Delivery App Integrations</h3>
                 <ul class="space-y-[10px] list-none p-0 m-0 mb-5">
-                  <li><a href="integrations/doordash.html" class="drop-link block text-[14px] font-roboto text-cn-black">DoorDash</a></li>
-                  <li><a href="integrations/integrations-ubereats.html" class="drop-link block text-[14px] font-roboto text-cn-black">UberEats</a></li>
-                  <li><a href="integrations/integrations-grubhub.html" class="drop-link block text-[14px] font-roboto text-cn-black">Grubhub</a></li>
+                  <li><a href="../project/integrations/doordash.html" class="drop-link block text-[14px] font-roboto text-cn-black">DoorDash</a></li>
+                  <li><a href="../project/integrations/integrations-ubereats.html" class="drop-link block text-[14px] font-roboto text-cn-black">UberEats</a></li>
+                  <li><a href="../project/integrations/integrations-grubhub.html" class="drop-link block text-[14px] font-roboto text-cn-black">Grubhub</a></li>
                 </ul>
                 <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">Discovery Network</h3>
                 <ul class="space-y-[10px] list-none p-0 m-0 mb-5">
-                  <li><a href="integrations/google.html" class="drop-link block text-[14px] font-roboto text-cn-black">Google</a></li>
-                  <li><a href="integrations/apple-maps.html" class="drop-link block text-[14px] font-roboto text-cn-black">Apple Maps</a></li>
-                  <li><a href="integrations/yelp.html" class="drop-link block text-[14px] font-roboto text-cn-black">Yelp</a></li>
+                  <li><a href="../project/integrations/google.html" class="drop-link block text-[14px] font-roboto text-cn-black">Google</a></li>
+                  <li><a href="../project/integrations/apple-maps.html" class="drop-link block text-[14px] font-roboto text-cn-black">Apple Maps</a></li>
+                  <li><a href="../project/integrations/yelp.html" class="drop-link block text-[14px] font-roboto text-cn-black">Yelp</a></li>
                 </ul>
                 <div class="bg-cn-blue rounded-xl p-5">
                   <h4 class="font-roboto font-semibold text-cn-black text-sm mb-2">See all 20+ ChowNow Integrations</h4>
-                  <a href="integrations/all.html" class="inline-block text-xs font-roboto font-semibold text-cn-black underline hover:opacity-60">Learn More</a>
+                  <a href="../project/integrations/all.html" class="inline-block text-xs font-roboto font-semibold text-cn-black underline hover:opacity-60">Learn More</a>
                 </div>
               </div>
             </div>
@@ -231,7 +238,7 @@
         </div>
 
         <!-- PRICING -->
-        <a href="pricing.html" class="nav-link px-5 xl:px-7 py-2 text-[15px] font-roboto font-medium text-cn-black tracking-[0.14em] uppercase">Pricing</a>
+        <a href="../project/pricing.html" class="nav-link px-5 xl:px-7 py-2 text-[15px] font-roboto font-medium text-cn-black tracking-[0.14em] uppercase">Pricing</a>
 
         <!-- RESOURCES -->
         <div class="mega-parent relative">
@@ -243,21 +250,21 @@
               <div>
                 <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">Learn & Grow</h3>
                 <ul class="space-y-[10px] list-none p-0 m-0">
-                  <li><a href="resources/blog.html" class="drop-link block text-[14px] font-roboto text-cn-black">Blog</a></li>
-                  <li><a href="resources/resources-guides.html" class="drop-link block text-[14px] font-roboto text-cn-black">Restaurant Guides</a></li>
-                  <li><a href="resources/resources-marketing.html" class="drop-link block text-[14px] font-roboto text-cn-black">Restaurant Marketing</a></li>
-                  <li><a href="resources/seo-for-restaurants.html" class="drop-link block text-[14px] font-roboto text-cn-black">SEO for Restaurants</a></li>
+                  <li><a href="../project/resources/blog.html" class="drop-link block text-[14px] font-roboto text-cn-black">Blog</a></li>
+                  <li><a href="../project/resources/resources-guides.html" class="drop-link block text-[14px] font-roboto text-cn-black">Restaurant Guides</a></li>
+                  <li><a href="../project/resources/resources-marketing.html" class="drop-link block text-[14px] font-roboto text-cn-black">Restaurant Marketing</a></li>
+                  <li><a href="../project/resources/seo-for-restaurants.html" class="drop-link block text-[14px] font-roboto text-cn-black">SEO for Restaurants</a></li>
                 </ul>
               </div>
               <div>
                 <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">Customer Stories</h3>
                 <ul class="space-y-[10px] list-none p-0 m-0 mb-5">
-                  <li><a href="resources/resources-case-studies.html" class="drop-link block text-[14px] font-roboto text-cn-black">Case Studies</a></li>
+                  <li><a href="../project/resources/resources-case-studies.html" class="drop-link block text-[14px] font-roboto text-cn-black">Case Studies</a></li>
                 </ul>
                 <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">Support</h3>
                 <ul class="space-y-[10px] list-none p-0 m-0">
-                  <li><a href="resources/support.html" class="drop-link block text-[14px] font-roboto text-cn-black">Restaurant Support</a></li>
-                  <li><a href="resources/diner-support.html" class="drop-link block text-[14px] font-roboto text-cn-black">Diner Support</a></li>
+                  <li><a href="../project/resources/support.html" class="drop-link block text-[14px] font-roboto text-cn-black">Restaurant Support</a></li>
+                  <li><a href="../project/resources/diner-support.html" class="drop-link block text-[14px] font-roboto text-cn-black">Diner Support</a></li>
                   <li><a href="https://chownow.com/" class="drop-link block text-[14px] font-roboto text-cn-black">ChowNow Marketplace</a></li>
                 </ul>
               </div>
@@ -275,19 +282,19 @@
               <div>
                 <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">About ChowNow</h3>
                 <ul class="space-y-[10px] list-none p-0 m-0">
-                  <li><a href="company/why-chownow.html" class="drop-link block text-[14px] font-roboto text-cn-black">Why ChowNow</a></li>
-                  <li><a href="company/about.html" class="drop-link block text-[14px] font-roboto text-cn-black">About Us</a></li>
-                  <li><a href="company/reviews.html" class="drop-link block text-[14px] font-roboto text-cn-black">Our Reviews</a></li>
-                  <li><a href="company/careers.html" class="drop-link block text-[14px] font-roboto text-cn-black">Careers</a></li>
+                  <li><a href="../project/company/why-chownow.html" class="drop-link block text-[14px] font-roboto text-cn-black">Why ChowNow</a></li>
+                  <li><a href="../project/company/about.html" class="drop-link block text-[14px] font-roboto text-cn-black">About Us</a></li>
+                  <li><a href="../project/company/reviews.html" class="drop-link block text-[14px] font-roboto text-cn-black">Our Reviews</a></li>
+                  <li><a href="../project/company/careers.html" class="drop-link block text-[14px] font-roboto text-cn-black">Careers</a></li>
                 </ul>
               </div>
               <div>
                 <h3 class="font-ibm-cond text-[11px] font-bold tracking-[0.18em] uppercase text-cn-black mb-4">Partners & Contact</h3>
                 <ul class="space-y-[10px] list-none p-0 m-0">
-                  <li><a href="company/partners.html" class="drop-link block text-[14px] font-roboto text-cn-black">Our Partners</a></li>
-                  <li><a href="company/contact.html" class="drop-link block text-[14px] font-roboto text-cn-black">Contact Us</a></li>
-                  <li><a href="refer.html" class="drop-link block text-[14px] font-roboto text-cn-black">Refer a Restaurant</a></li>
-                  <li><a href="affiliates/partner-signup.html" class="drop-link block text-[14px] font-roboto text-cn-black">Become a Partner</a></li>
+                  <li><a href="../project/company/partners.html" class="drop-link block text-[14px] font-roboto text-cn-black">Our Partners</a></li>
+                  <li><a href="../project/company/contact.html" class="drop-link block text-[14px] font-roboto text-cn-black">Contact Us</a></li>
+                  <li><a href="../project/refer.html" class="drop-link block text-[14px] font-roboto text-cn-black">Refer a Restaurant</a></li>
+                  <li><a href="../project/affiliates/partner-signup.html" class="drop-link block text-[14px] font-roboto text-cn-black">Become a Partner</a></li>
                 </ul>
               </div>
             </div>
@@ -295,10 +302,10 @@
         </div>
 
         <!-- LOGIN -->
-        <a href="login.html" class="nav-link px-5 xl:px-7 py-2 text-[15px] font-roboto font-medium text-cn-black tracking-[0.14em] uppercase">Login</a>
+        <a href="../project/login.html" class="nav-link px-5 xl:px-7 py-2 text-[15px] font-roboto font-medium text-cn-black tracking-[0.14em] uppercase">Login</a>
 
         <!-- BOOK A DEMO -->
-        <a href="get-started.html" class="ml-3 xl:ml-4 bg-cn-black text-white text-[14px] font-roboto font-semibold px-6 xl:px-8 py-3 rounded-full hover:bg-cn-dark transition-colors tracking-[0.1em] uppercase">Book A Demo</a>
+        <a href="../project/get-started.html" class="ml-3 xl:ml-4 bg-cn-black text-white text-[14px] font-roboto font-semibold px-6 xl:px-8 py-3 rounded-full hover:bg-cn-dark transition-colors tracking-[0.1em] uppercase">Book A Demo</a>
       </nav>
 
       <button id="mobile-toggle" class="lg:hidden p-2 -mr-2" aria-label="Open menu">
@@ -313,9 +320,9 @@
   </header>
 
   <!-- ===================== MOBILE MENU ===================== -->
-  <div id="mobile-menu" class="mobile-menu fixed inset-0 z-[60] bg-white">
+  <div id="mobile-menu" class="mobile-menu fixed inset-0 z-[60] bg-white transform translate-x-full transition-transform duration-300 ease-in-out"></div>
     <div class="flex items-center justify-between px-4 sm:px-5 h-[68px]">
-      <a href="index.html" aria-label="ChowNow Home">
+      <a href="../project/index.html" aria-label="ChowNow Home">
         <svg viewBox="0 0 200 51" fill="none" class="h-[28px] w-auto" xmlns="http://www.w3.org/2000/svg">
           <circle cx="23.0854" cy="23.2582" r="18.3188" fill="white"/>
           <path d="M65.486 34.8548C70.5136 34.8548 74.1033 32.1641 75.1905 27.8411L71.4413 27.0409C70.7367 29.8591 68.623 31.5584 65.4828 31.5584C61.3511 31.5584 58.2746 28.7083 58.2746 23.3906C58.2746 18.0729 61.3829 15.1909 65.4828 15.1909C68.5912 15.1909 70.8642 17.0176 71.505 20.0272L75.2191 19.227C74.4189 14.7732 70.6698 11.9231 65.4828 11.9231C59.7507 11.9231 54.4648 15.736 54.4648 23.3906C54.4648 31.0451 59.6869 34.858 65.4828 34.858L65.486 34.8548Z" fill="#161616"/>
@@ -336,27 +343,27 @@
         <button class="mobile-acc-tog w-full flex items-center justify-between py-4 text-[15px] font-roboto font-medium text-cn-black tracking-[0.1em] uppercase">
           Product <i data-lucide="chevron-down" class="w-4 h-4 faq-chevron"></i>
         </button>
-        <div class="mobile-acc-content hidden px-4 pb-4">
+        <div class="mobile-acc-content px-4 pb-0 overflow-hidden transition-all duration-300" style="max-height:0;"></div>
           <p class="font-ibm-cond text-[10px] font-bold tracking-[0.18em] uppercase mb-3 text-cn-gray">Ordering</p>
           <ul class="space-y-[9px] list-none p-0 m-0 mb-5">
-            <li><a href="products/products-online-ordering.html" class="block text-[14px] font-roboto text-cn-black">Online Ordering</a></li>
-            <li><a href="products/products-mobile-apps.html" class="block text-[14px] font-roboto text-cn-black">Branded Mobile Apps</a></li>
-            <li><a href="products/products-website-builder.html" class="block text-[14px] font-roboto text-cn-black">Website Builder</a></li>
-            <li><a href="products/products-marketplace.html" class="block text-[14px] font-roboto text-cn-black">Marketplace</a></li>
-            <li><a href="products/products-discovery-network.html" class="block text-[14px] font-roboto text-cn-black">Discovery Network</a></li>
-            <li><a href="products/products-catering.html" class="block text-[14px] font-roboto text-cn-black">Catering</a></li>
-            <li><a href="products/products-qr-code.html" class="block text-[14px] font-roboto text-cn-black">QR Code Ordering</a></li>
+            <li><a href="../project/products/products-online-ordering.html" class="block text-[14px] font-roboto text-cn-black">Online Ordering</a></li>
+            <li><a href="../project/products/products-mobile-apps.html" class="block text-[14px] font-roboto text-cn-black">Branded Mobile Apps</a></li>
+            <li><a href="../project/products/products-website-builder.html" class="block text-[14px] font-roboto text-cn-black">Website Builder</a></li>
+            <li><a href="../project/products/products-marketplace.html" class="block text-[14px] font-roboto text-cn-black">Marketplace</a></li>
+            <li><a href="../project/products/products-discovery-network.html" class="block text-[14px] font-roboto text-cn-black">Discovery Network</a></li>
+            <li><a href="../project/products/products-catering.html" class="block text-[14px] font-roboto text-cn-black">Catering</a></li>
+            <li><a href="../project/products/products-qr-code.html" class="block text-[14px] font-roboto text-cn-black">QR Code Ordering</a></li>
           </ul>
           <p class="font-ibm-cond text-[10px] font-bold tracking-[0.18em] uppercase mb-3 text-cn-gray">Marketing</p>
           <ul class="space-y-[9px] list-none p-0 m-0 mb-5">
-            <li><a href="products/products-email-sms.html" class="block text-[14px] font-roboto text-cn-black">Email & Text Marketing</a></li>
-            <li><a href="products/products-rewards.html" class="block text-[14px] font-roboto text-cn-black">Rewards Program</a></li>
+            <li><a href="../project/products/products-email-sms.html" class="block text-[14px] font-roboto text-cn-black">Email & Text Marketing</a></li>
+            <li><a href="../project/products/products-rewards.html" class="block text-[14px] font-roboto text-cn-black">Rewards Program</a></li>
           </ul>
           <p class="font-ibm-cond text-[10px] font-bold tracking-[0.18em] uppercase mb-3 text-cn-gray">Operations</p>
           <ul class="space-y-[9px] list-none p-0 m-0">
-            <li><a href="products/products-flex-delivery.html" class="block text-[14px] font-roboto text-cn-black">Flex Delivery</a></li>
-            <li><a href="products/products-order-aggregation.html" class="block text-[14px] font-roboto text-cn-black">Order Aggregation</a></li>
-            <li><a href="products/products-advanced-reporting.html" class="block text-[14px] font-roboto text-cn-black">Advanced Reporting</a></li>
+            <li><a href="../project/products/products-flex-delivery.html" class="block text-[14px] font-roboto text-cn-black">Flex Delivery</a></li>
+            <li><a href="../project/products/products-order-aggregation.html" class="block text-[14px] font-roboto text-cn-black">Order Aggregation</a></li>
+            <li><a href="../project/products/products-advanced-reporting.html" class="block text-[14px] font-roboto text-cn-black">Advanced Reporting</a></li>
           </ul>
         </div>
       </div>
@@ -365,41 +372,41 @@
         <button class="mobile-acc-tog w-full flex items-center justify-between py-4 text-[15px] font-roboto font-medium text-cn-black tracking-[0.1em] uppercase">
           Integrations <i data-lucide="chevron-down" class="w-4 h-4 faq-chevron"></i>
         </button>
-        <div class="mobile-acc-content hidden px-4 pb-4">
+        <div class="mobile-acc-content px-4 pb-0 overflow-hidden transition-all duration-300" style="max-height:0;"></div>
           <p class="font-ibm-cond text-[10px] font-bold tracking-[0.18em] uppercase mb-3 text-cn-gray">POS Integrations</p>
           <ul class="space-y-[9px] list-none p-0 m-0 mb-5">
-            <li><a href="integrations/clover.html" class="block text-[14px] font-roboto text-cn-black">Clover</a></li>
-            <li><a href="integrations/integrations-toast.html" class="block text-[14px] font-roboto text-cn-black">Toast</a></li>
-            <li><a href="integrations/integrations-square.html" class="block text-[14px] font-roboto text-cn-black">Square</a></li>
-            <li><a href="integrations/all.html" class="block text-[14px] font-roboto text-cn-black">See all 20+</a></li>
+            <li><a href="../project/integrations/clover.html" class="block text-[14px] font-roboto text-cn-black">Clover</a></li>
+            <li><a href="../project/integrations/integrations-toast.html" class="block text-[14px] font-roboto text-cn-black">Toast</a></li>
+            <li><a href="../project/integrations/integrations-square.html" class="block text-[14px] font-roboto text-cn-black">Square</a></li>
+            <li><a href="../project/integrations/all.html" class="block text-[14px] font-roboto text-cn-black">See all 20+</a></li>
           </ul>
           <p class="font-ibm-cond text-[10px] font-bold tracking-[0.18em] uppercase mb-3 text-cn-gray">Delivery Apps</p>
           <ul class="space-y-[9px] list-none p-0 m-0 mb-5">
-            <li><a href="integrations/doordash.html" class="block text-[14px] font-roboto text-cn-black">DoorDash</a></li>
-            <li><a href="integrations/integrations-ubereats.html" class="block text-[14px] font-roboto text-cn-black">UberEats</a></li>
-            <li><a href="integrations/integrations-grubhub.html" class="block text-[14px] font-roboto text-cn-black">Grubhub</a></li>
+            <li><a href="../project/integrations/doordash.html" class="block text-[14px] font-roboto text-cn-black">DoorDash</a></li>
+            <li><a href="../project/integrations/integrations-ubereats.html" class="block text-[14px] font-roboto text-cn-black">UberEats</a></li>
+            <li><a href="../project/integrations/integrations-grubhub.html" class="block text-[14px] font-roboto text-cn-black">Grubhub</a></li>
           </ul>
           <p class="font-ibm-cond text-[10px] font-bold tracking-[0.18em] uppercase mb-3 text-cn-gray">Discovery Network</p>
           <ul class="space-y-[9px] list-none p-0 m-0">
-            <li><a href="integrations/google.html" class="block text-[14px] font-roboto text-cn-black">Google</a></li>
-            <li><a href="integrations/apple-maps.html" class="block text-[14px] font-roboto text-cn-black">Apple Maps</a></li>
-            <li><a href="integrations/yelp.html" class="block text-[14px] font-roboto text-cn-black">Yelp</a></li>
+            <li><a href="../project/integrations/google.html" class="block text-[14px] font-roboto text-cn-black">Google</a></li>
+            <li><a href="../project/integrations/apple-maps.html" class="block text-[14px] font-roboto text-cn-black">Apple Maps</a></li>
+            <li><a href="../project/integrations/yelp.html" class="block text-[14px] font-roboto text-cn-black">Yelp</a></li>
           </ul>
         </div>
       </div>
       <div class="star-sep" data-char=" * "></div>
-      <a href="pricing.html" class="block py-4 text-[15px] font-roboto font-medium text-cn-black tracking-[0.1em] uppercase">Pricing</a>
+      <a href="../project/pricing.html" class="block py-4 text-[15px] font-roboto font-medium text-cn-black tracking-[0.1em] uppercase">Pricing</a>
       <div class="star-sep" data-char=" * "></div>
       <div class="mobile-accordion">
         <button class="mobile-acc-tog w-full flex items-center justify-between py-4 text-[15px] font-roboto font-medium text-cn-black tracking-[0.1em] uppercase">
           Resources <i data-lucide="chevron-down" class="w-4 h-4 faq-chevron"></i>
         </button>
-        <div class="mobile-acc-content hidden px-4 pb-4">
+        <div class="mobile-acc-content px-4 pb-0 overflow-hidden transition-all duration-300" style="max-height:0;">
           <ul class="space-y-[9px] list-none p-0 m-0">
-            <li><a href="resources/blog.html" class="block text-[14px] font-roboto text-cn-black">Blog</a></li>
-            <li><a href="resources/resources-guides.html" class="block text-[14px] font-roboto text-cn-black">Restaurant Guides</a></li>
-            <li><a href="resources/resources-case-studies.html" class="block text-[14px] font-roboto text-cn-black">Case Studies</a></li>
-            <li><a href="resources/support.html" class="block text-[14px] font-roboto text-cn-black">Restaurant Support</a></li>
+            <li><a href="../project/resources/blog.html" class="block text-[14px] font-roboto text-cn-black">Blog</a></li>
+            <li><a href="../project/resources/resources-guides.html" class="block text-[14px] font-roboto text-cn-black">Restaurant Guides</a></li>
+            <li><a href="../project/resources/resources-case-studies.html" class="block text-[14px] font-roboto text-cn-black">Case Studies</a></li>
+            <li><a href="../project/resources/support.html" class="block text-[14px] font-roboto text-cn-black">Restaurant Support</a></li>
           </ul>
         </div>
       </div>
@@ -408,18 +415,18 @@
         <button class="mobile-acc-tog w-full flex items-center justify-between py-4 text-[15px] font-roboto font-medium text-cn-black tracking-[0.1em] uppercase">
           Company <i data-lucide="chevron-down" class="w-4 h-4 faq-chevron"></i>
         </button>
-        <div class="mobile-acc-content hidden px-4 pb-4">
+        <div class="mobile-acc-content px-4 pb-0 overflow-hidden transition-all duration-300" style="max-height:0;">
           <ul class="space-y-[9px] list-none p-0 m-0">
-            <li><a href="company/why-chownow.html" class="block text-[14px] font-roboto text-cn-black">Why ChowNow</a></li>
-            <li><a href="company/about.html" class="block text-[14px] font-roboto text-cn-black">About Us</a></li>
-            <li><a href="company/careers.html" class="block text-[14px] font-roboto text-cn-black">Careers</a></li>
-            <li><a href="company/contact.html" class="block text-[14px] font-roboto text-cn-black">Contact Us</a></li>
+            <li><a href="../project/company/why-chownow.html" class="block text-[14px] font-roboto text-cn-black">Why ChowNow</a></li>
+            <li><a href="../project/company/about.html" class="block text-[14px] font-roboto text-cn-black">About Us</a></li>
+            <li><a href="../project/company/careers.html" class="block text-[14px] font-roboto text-cn-black">Careers</a></li>
+            <li><a href="../project/company/contact.html" class="block text-[14px] font-roboto text-cn-black">Contact Us</a></li>
           </ul>
         </div>
       </div>
       <div class="star-sep" data-char=" * "></div>
       <div class="pt-6">
-        <a href="login.html" class="block w-full border border-cn-black text-cn-black text-center font-roboto font-medium text-[14px] py-3 rounded-full tracking-wider uppercase">Login</a>
+        <a href="../project/login.html" class="block w-full border border-cn-black text-cn-black text-center font-roboto font-medium text-[14px] py-3 rounded-full tracking-wider uppercase">Login</a>
       </div>
       <p class="text-xs font-roboto text-cn-gray text-center pt-4 pb-8">Call or text 888.707.2469 for support</p>
     </div>
@@ -437,13 +444,13 @@
             <p class="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[1.5] text-cn-gray mb-6 sm:mb-8 max-w-lg">
               ChowNow fights for the success of independent restaurants so you can grow your revenue, build relationships, and run your business on your own terms.
             </p>
-            <a href="get-started.html" class="inline-block bg-cn-black text-white font-roboto font-medium text-[14px] sm:text-[16px] px-8 sm:px-10 py-3 sm:py-4 rounded-full hover:bg-cn-dark transition-colors">
+            <a href="../project/get-started.html" class="inline-block bg-cn-black text-white font-roboto font-medium text-[14px] sm:text-[16px] px-8 sm:px-10 py-3 sm:py-4 rounded-full hover:bg-cn-dark transition-colors">
               Book A Demo
             </a>
           </div>
           <div class="flex-1 w-full">
             <div class="relative rounded-[16px] sm:rounded-[24px] overflow-hidden aspect-4-3">
-              <img src="/image.jpg.png" alt="ChowNow restaurant example" class="w-full h-full object-cover">
+              <img src="../project/image.jpg.png" alt="ChowNow restaurant example" class="w-full h-full object-cover">
             </div>
           </div>
         </div>
@@ -489,7 +496,7 @@
               <li>Online Ordering Website</li><li>Branded Mobile App</li><li>ChowNow Marketplace</li>
               <li>Discovery Network — Google & 8 More</li><li>QR Code Ordering for Dine-In</li><li>Catering</li>
             </ul>
-            <a href="products/products-online-ordering.html" class="inline-block font-roboto font-medium text-[14px] sm:text-[16px] text-cn-black hover:opacity-60 transition-opacity">LEARN MORE →</a>
+            <a href="../project/products/products-online-ordering.html" class="inline-block font-roboto font-medium text-[14px] sm:text-[16px] text-cn-black hover:opacity-60 transition-opacity">LEARN MORE →</a>
           </div>
           <div class="image-card group">
             <div class="rounded-[12px] overflow-hidden aspect-4-3 mb-4 sm:mb-6 bg-cn-gray">
@@ -503,7 +510,7 @@
               <li>Behavior Based Automated Segmentation</li><li>Expanded Reach — Online & In-Store</li>
               <li>Performance Reporting Tied to Revenue</li><li>Loyalty and Rewards Program</li>
             </ul>
-            <a href="products/products-email-sms.html" class="inline-block font-roboto font-medium text-[14px] sm:text-[16px] text-cn-black hover:opacity-60 transition-opacity">LEARN MORE →</a>
+            <a href="../project/products/products-email-sms.html" class="inline-block font-roboto font-medium text-[14px] sm:text-[16px] text-cn-black hover:opacity-60 transition-opacity">LEARN MORE →</a>
           </div>
           <div class="image-card group">
             <div class="rounded-[12px] overflow-hidden aspect-4-3 mb-4 sm:mb-6 bg-cn-gray">
@@ -517,7 +524,7 @@
               <li>Centralized Menu Management</li><li>100% Chargeback & Fraud Protection</li>
               <li>Smart Delivery Management</li><li>One Performance Dashboard for All Channels</li>
             </ul>
-            <a href="products/products-order-aggregation.html" class="inline-block font-roboto font-medium text-[14px] sm:text-[16px] text-cn-black hover:opacity-60 transition-opacity">LEARN MORE →</a>
+            <a href="../project/products/products-order-aggregation.html" class="inline-block font-roboto font-medium text-[14px] sm:text-[16px] text-cn-black hover:opacity-60 transition-opacity">LEARN MORE →</a>
           </div>
         </div>
       </div>
@@ -559,55 +566,49 @@
     <section class="section-fade pb-8 sm:pb-12 lg:pb-16">
       <div class="overflow-hidden">
         <div class="case-slider-track px-4 sm:px-6 lg:px-10">
-          <a href="resources/resources-case-studies.html" class="flex-shrink-0 w-[280px] sm:w-[340px] md:w-[380px] group">
+          <a href="../project/resources/resources-case-studies.html" class="flex-shrink-0 w-[280px] sm:w-[340px] md:w-[380px] group">
             <div class="rounded-[12px] overflow-hidden aspect-[16/9] mb-3 sm:mb-5 bg-cn-gray"><img src="https://get.chownow.com/wp-content/uploads/2026/01/ollies-outside-658x370-1.webp" alt="Ollie's restaurant" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
             <h3 class="font-roboto text-[16px] sm:text-[18px] font-normal text-cn-black mb-2 sm:mb-3 group-hover:opacity-70 transition-opacity flex items-center gap-1">Ollie's | New York <i data-lucide="arrow-right" class="w-4 h-4"></i></h3>
             <div class="font-ibm text-[32px] sm:text-[40px] lg:text-[48px] font-normal text-cn-black leading-none">$2M</div>
             <p class="font-roboto text-[14px] sm:text-[16px] font-normal text-cn-gray mt-1 sm:mt-2">Saved in commission<br>fees annually</p>
           </a>
-          <a href="resources/resources-case-studies.html" class="flex-shrink-0 w-[280px] sm:w-[340px] md:w-[380px] group">
+          <a href="../project/resources/resources-case-studies.html" class="flex-shrink-0 w-[280px] sm:w-[340px] md:w-[380px] group">
             <div class="rounded-[12px] overflow-hidden aspect-[16/9] mb-3 sm:mb-5 bg-cn-gray"><img src="https://get.chownow.com/wp-content/uploads/2024/01/Renegade-Burrito-Exterior.jpg.webp" alt="Renegade Burrito" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
             <h3 class="font-roboto text-[16px] sm:text-[18px] font-normal text-cn-black mb-2 sm:mb-3 group-hover:opacity-70 transition-opacity flex items-center gap-1">Renegade Burrito | Denver <i data-lucide="arrow-right" class="w-4 h-4"></i></h3>
             <div class="font-ibm text-[32px] sm:text-[40px] lg:text-[48px] font-normal text-cn-black leading-none">167%</div>
             <p class="font-roboto text-[14px] sm:text-[16px] font-normal text-cn-gray mt-1 sm:mt-2">Increase in<br>average orders</p>
           </a>
-          <a href="resources/resources-case-studies.html" class="flex-shrink-0 w-[280px] sm:w-[340px] md:w-[380px] group">
+          <a href="../project/resources/resources-case-studies.html" class="flex-shrink-0 w-[280px] sm:w-[340px] md:w-[380px] group">
             <div class="rounded-[12px] overflow-hidden aspect-[16/9] mb-3 sm:mb-5 bg-cn-gray"><img src="https://get.chownow.com/wp-content/uploads/2026/01/sushi-bowl-658x370-1.webp" alt="Sushi-Zen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
             <h3 class="font-roboto text-[16px] sm:text-[18px] font-normal text-cn-black mb-2 sm:mb-3 group-hover:opacity-70 transition-opacity flex items-center gap-1">Sushi-Zen | Arlington <i data-lucide="arrow-right" class="w-4 h-4"></i></h3>
             <div class="font-ibm text-[32px] sm:text-[40px] lg:text-[48px] font-normal text-cn-black leading-none">$2.5M</div>
             <p class="font-roboto text-[14px] sm:text-[16px] font-normal text-cn-gray mt-1 sm:mt-2">In total<br>sales</p>
           </a>
-          <a href="resources/resources-case-studies.html" class="flex-shrink-0 w-[280px] sm:w-[340px] md:w-[380px] group">
-            <div class="rounded-[12px] overflow-hidden aspect-[16/9] mb-3 sm:mb-5 bg-cn-gray"><img src="https://get.chownow.com/wp-content/uploads/2026/01/header-sprinkles-658x370-1.webp" alt="ingrained Chicago" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
-            <h3 class="font-roboto text-[16px] sm:text-[18px] font-normal text-cn-black mb-2 sm:mb-3 group-hover:opacity-70 transition-opacity flex items-center gap-1">ingrained | Chicago <i data-lucide="arrow-right" class="w-4 h-4"></i></h3>
-            <div class="font-ibm text-[32px] sm:text-[40px] lg:text-[48px] font-normal text-cn-black leading-none">$76K+</div>
-            <p class="font-roboto text-[14px] sm:text-[16px] font-normal text-cn-gray mt-1 sm:mt-2">In direct<br>sales</p>
-          </a>
-          <a href="resources/resources-case-studies.html" class="flex-shrink-0 w-[280px] sm:w-[340px] md:w-[380px] group">
+          <a href="../project/resources/resources-case-studies.html" class="flex-shrink-0 w-[280px] sm:w-[340px] md:w-[380px] group">
             <div class="rounded-[12px] overflow-hidden aspect-[16/9] mb-3 sm:mb-5 bg-cn-gray"><img src="https://get.chownow.com/wp-content/uploads/2025/11/4Top-Case-Study-Option-3-Amerigo-1500x536.jpeg.webp" alt="4Top Hospitality" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
             <h3 class="font-roboto text-[16px] sm:text-[18px] font-normal text-cn-black mb-2 sm:mb-3 group-hover:opacity-70 transition-opacity flex items-center gap-1">4Top Hospitality <i data-lucide="arrow-right" class="w-4 h-4"></i></h3>
             <div class="font-ibm text-[32px] sm:text-[40px] lg:text-[48px] font-normal text-cn-black leading-none">$288K</div>
             <p class="font-roboto text-[14px] sm:text-[16px] font-normal text-cn-gray mt-1 sm:mt-2">Saved in commission<br>fees annually</p>
           </a>
-          <a href="resources/resources-case-studies.html" class="flex-shrink-0 w-[280px] sm:w-[340px] md:w-[380px] group">
+          <a href="../project/resources/resources-case-studies.html" class="flex-shrink-0 w-[280px] sm:w-[340px] md:w-[380px] group">
             <div class="rounded-[12px] overflow-hidden aspect-[16/9] mb-3 sm:mb-5 bg-cn-gray"><img src="https://get.chownow.com/wp-content/uploads/2026/01/thai-spread-658x370-1.webp" alt="Emporium Thai" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
             <h3 class="font-roboto text-[16px] sm:text-[18px] font-normal text-cn-black mb-2 sm:mb-3 group-hover:opacity-70 transition-opacity flex items-center gap-1">Emporium Thai | LA <i data-lucide="arrow-right" class="w-4 h-4"></i></h3>
             <div class="font-ibm text-[32px] sm:text-[40px] lg:text-[48px] font-normal text-cn-black leading-none">$68K</div>
             <p class="font-roboto text-[14px] sm:text-[16px] font-normal text-cn-gray mt-1 sm:mt-2">Saved in<br>Commission Fees</p>
           </a>
-          <a href="resources/resources-case-studies.html" class="flex-shrink-0 w-[280px] sm:w-[340px] md:w-[380px] group">
+          <a href="../project/resources/resources-case-studies.html" class="flex-shrink-0 w-[280px] sm:w-[340px] md:w-[380px] group">
             <div class="rounded-[12px] overflow-hidden aspect-[16/9] mb-3 sm:mb-5 bg-cn-gray"><img src="https://get.chownow.com/wp-content/uploads/2026/01/ollies-outside-658x370-1.webp" alt="Ollie's restaurant" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
             <h3 class="font-roboto text-[16px] sm:text-[18px] font-normal text-cn-black mb-2 sm:mb-3 group-hover:opacity-70 transition-opacity flex items-center gap-1">Ollie's | New York <i data-lucide="arrow-right" class="w-4 h-4"></i></h3>
             <div class="font-ibm text-[32px] sm:text-[40px] lg:text-[48px] font-normal text-cn-black leading-none">$2M</div>
             <p class="font-roboto text-[14px] sm:text-[16px] font-normal text-cn-gray mt-1 sm:mt-2">Saved in commission<br>fees annually</p>
           </a>
-          <a href="resources/resources-case-studies.html" class="flex-shrink-0 w-[280px] sm:w-[340px] md:w-[380px] group">
+          <a href="../project/resources/resources-case-studies.html" class="flex-shrink-0 w-[280px] sm:w-[340px] md:w-[380px] group">
             <div class="rounded-[12px] overflow-hidden aspect-[16/9] mb-3 sm:mb-5 bg-cn-gray"><img src="https://get.chownow.com/wp-content/uploads/2024/01/Renegade-Burrito-Exterior.jpg.webp" alt="Renegade Burrito" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
             <h3 class="font-roboto text-[16px] sm:text-[18px] font-normal text-cn-black mb-2 sm:mb-3 group-hover:opacity-70 transition-opacity flex items-center gap-1">Renegade Burrito | Denver <i data-lucide="arrow-right" class="w-4 h-4"></i></h3>
             <div class="font-ibm text-[32px] sm:text-[40px] lg:text-[48px] font-normal text-cn-black leading-none">167%</div>
             <p class="font-roboto text-[14px] sm:text-[16px] font-normal text-cn-gray mt-1 sm:mt-2">Increase in<br>average orders</p>
           </a>
-          <a href="resources/resources-case-studies.html" class="flex-shrink-0 w-[280px] sm:w-[340px] md:w-[380px] group">
+          <a href="../project/resources/resources-case-studies.html" class="flex-shrink-0 w-[280px] sm:w-[340px] md:w-[380px] group">
             <div class="rounded-[12px] overflow-hidden aspect-[16/9] mb-3 sm:mb-5 bg-cn-gray"><img src="https://get.chownow.com/wp-content/uploads/2026/01/sushi-bowl-658x370-1.webp" alt="Sushi-Zen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
             <h3 class="font-roboto text-[16px] sm:text-[18px] font-normal text-cn-black mb-2 sm:mb-3 group-hover:opacity-70 transition-opacity flex items-center gap-1">Sushi-Zen | Arlington <i data-lucide="arrow-right" class="w-4 h-4"></i></h3>
             <div class="font-ibm text-[32px] sm:text-[40px] lg:text-[48px] font-normal text-cn-black leading-none">$2.5M</div>
@@ -632,7 +633,7 @@
             </p>
             <div class="star-sep" data-char=" * " style="color:rgba(22,22,22,0.25);"></div>
             <h5 class="font-roboto text-[14px] sm:text-[16px] font-normal text-cn-black mt-4 sm:mt-6">
-              <a href="resources/resources-case-studies.html" class="hover:opacity-60 transition-opacity inline-flex items-center gap-1">— Steve Capellini, Atchana's Homegrown Thai <i data-lucide="arrow-right" class="w-3 h-3 sm:w-3.5 sm:h-3.5"></i></a>
+              <a href="../project/resources/resources-case-studies.html" class="hover:opacity-60 transition-opacity inline-flex items-center gap-1">— Steve Capellini, Atchana's Homegrown Thai <i data-lucide="arrow-right" class="w-3 h-3 sm:w-3.5 sm:h-3.5"></i></a>
             </h5>
           </div>
         </div>
@@ -728,26 +729,26 @@
             <div>
               <p class="font-ibm-cond text-[10px] sm:text-[11px] font-bold tracking-[0.15em] uppercase text-cn-gray mb-2 sm:mb-3">Ordering</p>
               <ul class="space-y-1.5 sm:space-y-2">
-                <li><a href="products/products-online-ordering.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Online Ordering</a></li>
-                <li><a href="products/products-mobile-apps.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Branded Mobile Apps</a></li>
-                <li><a href="products/products-website-builder.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Website Builder</a></li>
-                <li><a href="products/products-marketplace.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Marketplace</a></li>
-                <li><a href="products/products-discovery-network.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Discovery Network</a></li>
-                <li><a href="products/products-catering.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Catering</a></li>
-                <li><a href="products/products-qr-code.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">QR Code Ordering</a></li>
+                <li><a href="../project/products/products-online-ordering.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Online Ordering</a></li>
+                <li><a href="../project/products/products-mobile-apps.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Branded Mobile Apps</a></li>
+                <li><a href="../project/products/products-website-builder.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Website Builder</a></li>
+                <li><a href="../project/products/products-marketplace.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Marketplace</a></li>
+                <li><a href="../project/products/products-discovery-network.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Discovery Network</a></li>
+                <li><a href="../project/products/products-catering.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Catering</a></li>
+                <li><a href="../project/products/products-qr-code.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">QR Code Ordering</a></li>
               </ul>
             </div>
             <div>
               <p class="font-ibm-cond text-[10px] sm:text-[11px] font-bold tracking-[0.15em] uppercase text-cn-gray mb-2 sm:mb-3">Marketing</p>
               <ul class="space-y-1.5 sm:space-y-2 mb-4 sm:mb-5">
-                <li><a href="products/products-email-sms.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Email & Text Marketing</a></li>
-                <li><a href="products/products-rewards.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Rewards Program</a></li>
+                <li><a href="../project/products/products-email-sms.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Email & Text Marketing</a></li>
+                <li><a href="../project/products/products-rewards.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Rewards Program</a></li>
               </ul>
               <p class="font-ibm-cond text-[10px] sm:text-[11px] font-bold tracking-[0.15em] uppercase text-cn-gray mb-2 sm:mb-3">Operations</p>
               <ul class="space-y-1.5 sm:space-y-2">
-                <li><a href="products/products-flex-delivery.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Flex Delivery</a></li>
-                <li><a href="products/products-order-aggregation.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Order Aggregation</a></li>
-                <li><a href="products/products-advanced-reporting.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Advanced Reporting</a></li>
+                <li><a href="../project/products/products-flex-delivery.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Flex Delivery</a></li>
+                <li><a href="../project/products/products-order-aggregation.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Order Aggregation</a></li>
+                <li><a href="../project/products/products-advanced-reporting.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Advanced Reporting</a></li>
               </ul>
             </div>
           </div>
@@ -756,48 +757,48 @@
           <h3 class="font-ibm-cond text-[12px] sm:text-[13px] font-bold tracking-[0.15em] uppercase text-cn-black mb-4 sm:mb-5">Integrations</h3>
           <p class="font-ibm-cond text-[10px] sm:text-[11px] font-bold tracking-[0.15em] uppercase text-cn-gray mb-2 sm:mb-3">POS</p>
           <ul class="space-y-1.5 sm:space-y-2 mb-3 sm:mb-4">
-            <li><a href="integrations/clover.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Clover</a></li>
-            <li><a href="integrations/integrations-toast.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Toast</a></li>
-            <li><a href="integrations/integrations-square.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Square</a></li>
-            <li><a href="integrations/all.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">See all 20+</a></li>
+            <li><a href="../project/integrations/clover.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Clover</a></li>
+            <li><a href="../project/integrations/integrations-toast.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Toast</a></li>
+            <li><a href="../project/integrations/integrations-square.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Square</a></li>
+            <li><a href="../project/integrations/all.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">See all 20+</a></li>
           </ul>
           <p class="font-ibm-cond text-[10px] sm:text-[11px] font-bold tracking-[0.15em] uppercase text-cn-gray mb-2 sm:mb-3">Delivery Apps</p>
           <ul class="space-y-1.5 sm:space-y-2">
-            <li><a href="integrations/doordash.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">DoorDash</a></li>
-            <li><a href="integrations/integrations-ubereats.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">UberEats</a></li>
-            <li><a href="integrations/integrations-grubhub.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Grubhub</a></li>
+            <li><a href="../project/integrations/doordash.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">DoorDash</a></li>
+            <li><a href="../project/integrations/integrations-ubereats.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">UberEats</a></li>
+            <li><a href="../project/integrations/integrations-grubhub.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Grubhub</a></li>
           </ul>
         </div>
         <div>
           <h3 class="font-ibm-cond text-[12px] sm:text-[13px] font-bold tracking-[0.15em] uppercase text-cn-black mb-4 sm:mb-5">Resources</h3>
           <p class="font-ibm-cond text-[10px] sm:text-[11px] font-bold tracking-[0.15em] uppercase text-cn-gray mb-2 sm:mb-3">Learn & Grow</p>
           <ul class="space-y-1.5 sm:space-y-2 mb-3 sm:mb-4">
-            <li><a href="resources/blog.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Blog</a></li>
-            <li><a href="resources/resources-guides.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Restaurant Guides</a></li>
-            <li><a href="resources/resources-marketing.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Restaurant Marketing</a></li>
+            <li><a href="../project/resources/blog.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Blog</a></li>
+            <li><a href="../project/resources/resources-guides.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Restaurant Guides</a></li>
+            <li><a href="../project/resources/resources-marketing.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Restaurant Marketing</a></li>
           </ul>
           <p class="font-ibm-cond text-[10px] sm:text-[11px] font-bold tracking-[0.15em] uppercase text-cn-gray mb-2 sm:mb-3">Support</p>
           <ul class="space-y-1.5 sm:space-y-2">
-            <li><a href="resources/support.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Restaurant Support</a></li>
-            <li><a href="resources/diner-support.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Diner Support</a></li>
+            <li><a href="../project/resources/support.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Restaurant Support</a></li>
+            <li><a href="../project/resources/diner-support.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Diner Support</a></li>
           </ul>
         </div>
         <div>
           <h3 class="font-ibm-cond text-[12px] sm:text-[13px] font-bold tracking-[0.15em] uppercase text-cn-black mb-4 sm:mb-5">Company</h3>
           <ul class="space-y-1.5 sm:space-y-2">
-            <li><a href="company/why-chownow.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Why ChowNow</a></li>
-            <li><a href="company/about.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">About Us</a></li>
-            <li><a href="company/reviews.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Our Reviews</a></li>
-            <li><a href="company/careers.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Careers</a></li>
-            <li><a href="company/partners.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Our Partners</a></li>
-            <li><a href="company/contact.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Contact Us</a></li>
-            <li><a href="refer.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Refer a Restaurant</a></li>
+            <li><a href="../project/company/why-chownow.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Why ChowNow</a></li>
+            <li><a href="../project/company/about.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">About Us</a></li>
+            <li><a href="../project/company/reviews.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Our Reviews</a></li>
+            <li><a href="../project/company/careers.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Careers</a></li>
+            <li><a href="../project/company/partners.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Our Partners</a></li>
+            <li><a href="../project/company/contact.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Contact Us</a></li>
+            <li><a href="../project/company/refer.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Refer a Restaurant</a></li>
           </ul>
         </div>
       </div>
       <div class="star-sep" data-char=" ~ "></div>
       <div class="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 py-6 sm:py-8">
-        <a href="index.html">
+        <a href="../project/index.html">
           <svg viewBox="0 0 200 51" fill="none" class="h-[28px] sm:h-[32px] w-auto" xmlns="http://www.w3.org/2000/svg">
             <circle cx="23.0854" cy="23.2582" r="18.3188" fill="white"/>
             <path d="M65.486 34.8548C70.5136 34.8548 74.1033 32.1641 75.1905 27.8411L71.4413 27.0409C70.7367 29.8591 68.623 31.5584 65.4828 31.5584C61.3511 31.5584 58.2746 28.7083 58.2746 23.3906C58.2746 18.0729 61.3829 15.1909 65.4828 15.1909C68.5912 15.1909 70.8642 17.0176 71.505 20.0272L75.2191 19.227C74.4189 14.7732 70.6698 11.9231 65.4828 11.9231C59.7507 11.9231 54.4648 15.736 54.4648 23.3906C54.4648 31.0451 59.6869 34.858 65.4828 34.858L65.486 34.8548Z" fill="#161616"/>
@@ -811,19 +812,19 @@
           </svg>
         </a>
         <div class="flex items-center gap-4 sm:gap-6">
-          <a href="pricing.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Pricing</a>
-          <a href="login.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Login</a>
-          <a href="get-started.html" class="bg-cn-black text-white text-[12px] sm:text-[13px] font-roboto font-medium px-5 sm:px-6 py-2 rounded-full hover:bg-cn-dark transition-colors">Book A Demo</a>
+          <a href="../project/pricing.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Pricing</a>
+          <a href="../project/login.html" class="text-[12px] sm:text-[13px] font-roboto text-cn-black hover:opacity-60 transition-opacity">Login</a>
+          <a href="../project/get-started.html" class="bg-cn-black text-white text-[12px] sm:text-[13px] font-roboto font-medium px-5 sm:px-6 py-2 rounded-full hover:bg-cn-dark transition-colors">Book A Demo</a>
         </div>
       </div>
       <div class="star-sep" data-char=" ~ "></div>
       <div class="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 pb-6 sm:pb-10">
         <p class="text-[11px] sm:text-[12px] font-roboto text-cn-gray text-center sm:text-left">© 2026 ChowNow. All Rights Reserved. 3585 Hayden Ave, Culver City, California 90232</p>
         <div class="flex items-center gap-3 sm:gap-4 flex-wrap justify-center">
-          <a href="legal-refund.html" class="text-[11px] sm:text-[12px] font-roboto text-cn-gray hover:text-cn-black transition-colors">Refund Policy</a>
-          <a href="legal-terms.html" class="text-[11px] sm:text-[12px] font-roboto text-cn-gray hover:text-cn-black transition-colors">Terms</a>
-          <a href="legal-privacy.html" class="text-[11px] sm:text-[12px] font-roboto text-cn-gray hover:text-cn-black transition-colors">Privacy Policy</a>
-          <a href="legal-ca-privacy.html" class="text-[11px] sm:text-[12px] font-roboto text-cn-gray hover:text-cn-black transition-colors">CA Privacy Notice</a>
+          <a href="../project/legal-refund.html" class="text-[11px] sm:text-[12px] font-roboto text-cn-gray hover:text-cn-black transition-colors">Refund Policy</a>
+          <a href="../project/legal-terms.html" class="text-[11px] sm:text-[12px] font-roboto text-cn-gray hover:text-cn-black transition-colors">Terms</a>
+          <a href="../project/legal-privacy.html" class="text-[11px] sm:text-[12px] font-roboto text-cn-gray hover:text-cn-black transition-colors">Privacy Policy</a>
+          <a href="../project/legal-ca-privacy.html" class="text-[11px] sm:text-[12px] font-roboto text-cn-gray hover:text-cn-black transition-colors">CA Privacy Notice</a>
           <a href="#" class="text-[11px] sm:text-[12px] font-roboto text-cn-gray hover:text-cn-black transition-colors">Do Not Sell Request</a>
         </div>
       </div>
